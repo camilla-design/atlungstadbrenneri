@@ -7,6 +7,21 @@ body {
 
 }
 
-.slide-width img {
-    width: 350px;
+.welcome-text-container {
+    position: relative;
+   padding-top: 90px !important;
 }
+
+.opening-hours-contanier {
+    width: 300px;
+    background: $color-primary;
+    margin: 0 auto;
+    color: $color-background;
+
+    .opening-container {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
