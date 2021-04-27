@@ -1,9 +1,10 @@
+
 body {
     margin: 0;
     height: 100%;
     width: 100%;
     font-family: $font-primary;
-    background: $color-background;
+    background: #F2F2F0 !important;
 
 }
 
@@ -23,5 +24,16 @@ body {
         display: flex;
         justify-content: space-between;
     }
+}
+
+.card-background, .card-header {
+    background-color:#343A40!important;
+    text-align: center;
+    border: none !important;
+
+    h2 {
+        text-align: center !important;
+    }
+
 }
 

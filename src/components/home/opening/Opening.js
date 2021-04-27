@@ -21,6 +21,7 @@ function Opening() {
             getApi();
         },[]);
 
+
 return(
     <div className="opening-hours-contanier mt-2 p-5">
         <h4>Åpningstider</h4>

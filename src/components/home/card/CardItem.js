@@ -29,7 +29,7 @@ function CardItem() {
                 <Card.Text>
                     {cardInfo[0].description}
                 </Card.Text>
-                <Button variant="dark">Spiseriet</Button>
+                <a href="/spiseriet" variant="dark">Spiseriet</a>
             </Card.Body>
         </Card>
         <Card className="mt-5" style={{ width: '18rem' }}>
