@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { API_URL } from "../../../constants/api/API_URL";
+import ScrollAnimation from 'react-animate-on-scroll';
+
+
+import historyImage from "../../../images/hero/history1.jpg"
 
 function WelcomeText() {
-    const API = API_URL + "welcometexts";
+    const API = API_URL + "/welcometexts";
     const [textInfo, setTextInfo] = useState(null)
     
     useEffect(() => {
@@ -15,10 +19,22 @@ function WelcomeText() {
 
     if(textInfo) {
         return (
-            <div className="container mt-2 p-5">
-                <h4>{textInfo[0].title}</h4>
-                <p>{textInfo[0].description}</p>
+            <ScrollAnimation animateIn="fadeIn">
+          
+            <div className="container mt-5 p-4">
+                <h1>{textInfo[0].title}</h1>
+                <p className="mt-3">{textInfo[0].description}</p>
+                <div class="read-more-button mt-3">
+                    <a href="">Les mer</a>
+                </div>
+                <div className="mt-3 image-container">
+                    <img src={historyImage} width="300" />
+                </div>
             </div>
+
+            </ScrollAnimation>
+        
+           
         )
     }
     return(

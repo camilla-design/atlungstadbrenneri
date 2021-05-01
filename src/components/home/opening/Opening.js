@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { API_URL } from "../../../constants/api/API_URL";
+import ScrollAnimation from 'react-animate-on-scroll';
 
-const API = API_URL + "openings"
+const API = API_URL + "/openings"
 
 
 function Opening() {
@@ -21,27 +22,34 @@ function Opening() {
             getApi();
         },[]);
 
+       
 
 return(
-    <div className="opening-hours-contanier mt-2 p-5">
-        <h4>Åpningstider</h4>
-        <div className="opening-container">
+    <ScrollAnimation animateIn='fadeIn'>
+    <div className="container opening-hours-contanier mt-2 p-5">
+        <h1 className="mt-5">Åpningstider</h1>
+        <p>Våre åpningstider ligger også på vår Facebook side: <a href="https://www.facebook.com/atlungstadbrenneri">Atlungstad Brenneri</a></p>
+        <div className="opening-container mt-5">
             <div>
             {opening.map(open => 
             <div className="opening-day">
-                <p>{open.day}</p>
+                <p className="mt-2">{open.day}</p>
                 </div>
             )}
             </div>
             <div>
             {opening.map(open => 
-                <p>{open.time} {open.closed}</p>
+            <div className="">
+                <p className="mt-2">{open.time}</p> 
+                <p className="closed-text"> {open.closed}</p>
+                </div>
                 )}
                 </div>
                 
         </div>
        
     </div>
+    </ScrollAnimation>
 );
 };
 

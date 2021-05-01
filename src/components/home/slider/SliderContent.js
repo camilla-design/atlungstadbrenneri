@@ -11,21 +11,21 @@ const SliderContent = () => {
     <Carousel fade={true} pause={false}>
       <Carousel.Item interval={8000}>
         <img
-          className="d-block w-100 h-100"
+          className="w-100 h-100"
           src={image1}
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={8000}>
         <img
-          className="d-block w-100 h-100"
+          className="w-100 h-100"
           src={image2}
           alt="Third slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={8000}>
         <img
-          className="d-block w-100 h-100"
+          className="w-100 h-100"
           src={image3}
           alt="Third slide"
         />

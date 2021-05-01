@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 function CardItem() {
-    const API = API_URL + "cards";
+    const API = API_URL + "/cards";
     
     const [cardInfo, setcardInfo] = useState(null)
     
@@ -22,26 +22,56 @@ function CardItem() {
     if(cardInfo) {
         return (
             <>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="http://localhost:3000/static/media/DSC09315.6deb4f3f.jpg" />
+            <div className="container card-container">
+            <Card className="mt-4">
+                <Card.Img variant="top" src={`${API_URL}${cardInfo[0].image[0].url}`} />
                 <Card.Body>
-                <Card.Title>{cardInfo[0].title}</Card.Title>
+                <Card.Title className="card-title">{cardInfo[0].title}</Card.Title>
                 <Card.Text>
+                
                     {cardInfo[0].description}
+                  
                 </Card.Text>
-                <a href="/spiseriet" variant="dark">Spiseriet</a>
+                <Button variant="dark"><a href="/spiseriet" variant="dark">Spiseriet</a></Button>
             </Card.Body>
         </Card>
-        <Card className="mt-5" style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="http://localhost:3000/static/media/DSC09315.6deb4f3f.jpg" />
+        <Card className="mt-4">
+                <Card.Img variant="top" src={`${API_URL}${cardInfo[1].image[0].url}`} />
                 <Card.Body>
-                <Card.Title>{cardInfo[1].title}</Card.Title>
+                <Card.Title className="card-title">{cardInfo[1].title}</Card.Title>
                 <Card.Text>
+                   
                     {cardInfo[1].description}
+                   
                 </Card.Text>
-                <Button variant="dark">Take Away</Button>
+                <Button variant="dark"><a href="https://ecom.susoft.com/atlungstadtakeaway/home">Take Away</a></Button>
             </Card.Body>
         </Card>
+        <Card className="mt-4">
+                <Card.Img variant="top" src={`${API_URL}${cardInfo[2].image[0].url}`} />
+                <Card.Body>
+                <Card.Title className="card-title">{cardInfo[2].title}</Card.Title>
+                <Card.Text>
+                   
+                    {cardInfo[1].description}
+                   
+                </Card.Text>
+                <Button variant="dark"><a href="/opplevelser">Opplevelser</a></Button>
+            </Card.Body>
+        </Card>
+        <Card className="mt-4">
+                <Card.Img variant="top" src={`${API_URL}${cardInfo[3].image[0].url}`} />
+                <Card.Body>
+                <Card.Title className="card-title">{cardInfo[3].title}</Card.Title>
+                <Card.Text>
+                   
+                    {cardInfo[1].description}
+                   
+                </Card.Text>
+                <Button variant="dark"><a href="https://ecom.susoft.com/atlungstadbutikk/home">Nettbutikk</a></Button>
+            </Card.Body>
+        </Card>
+        </div>
 
         </>
 

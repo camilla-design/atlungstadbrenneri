@@ -5,19 +5,28 @@ body {
     width: 100%;
     font-family: $font-primary;
     background: #F2F2F0 !important;
+    position: absolute;
 
 }
 
-.welcome-text-container {
+.container {
     position: relative;
-   padding-top: 90px !important;
+    height: 100vh;
+
 }
+
+.fadeIn {
+    animation-duration: 4s !important; 
+}
+
 
 .opening-hours-contanier {
     width: 300px;
     background: $color-primary;
     margin: 0 auto;
     color: $color-background;
+    text-align: center;
+    text-transform: uppercase;
 
     .opening-container {
         margin-top: 24px;
@@ -25,6 +34,8 @@ body {
         justify-content: space-between;
     }
 }
+
+// card
 
 .card-background, .card-header {
     background-color:#343A40!important;
@@ -37,3 +48,154 @@ body {
 
 }
 
+.card-container {
+    height: 260vh !important;
+}
+
+.card-img {
+    text-align: center !important;
+}
+
+/// menu.js
+
+
+.container-meny {
+    text-align: center;
+
+    a {
+        color: #F2F2F0 !important;
+    }
+
+    .nav-item {
+        a {
+            
+            color: #83837f!important;
+    
+        }
+    }
+    .nav-link:hover {
+        background-color: #007bff !important;
+        color:  #F2F2F0 !important;
+    }
+    
+    .nav-link.active {
+    
+        color:  #F2F2F0 !important;
+        background-color:#343A40!important;
+    
+    }
+    
+
+    
+}
+
+.nav-link:hover {
+    background-color: #007bff !important;
+    color:  #F2F2F0 !important;
+}
+
+.nav-link.active {
+
+    color:  #F2F2F0 !important;
+    background-color:#343A40!important;
+
+}
+
+///// IMGAE SLIDE
+
+.slide-content-mobile {
+    display: block;
+    @media (min-width: 700px) {
+        display: none !important;
+
+      }     
+}
+
+.slide-bigger-screen {
+    display: none !important;
+
+    @media (min-width: 700px) {
+        display: block;
+
+      }
+}
+
+//// welcome text image
+.image-container {
+    text-align: center;
+}
+
+
+/// spiseriet
+.category-container {
+    position: relative;
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+
+ ///// IMAGE GALLERY
+
+
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive-gallery {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media (max-width: 700px) {
+    .responsive-gallery {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .responsive-gallery {
+      width: 50%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  // FORM
+
+  .form-container {
+    background-color:#343A40!important;
+    padding: 5%;
+    color: #F2F2F0 !important;
+  }
+
+  
+.footer-container {
+  position: relative !important;
+  background: black;
+  color: #F2F2F0 !important;
+  text-align: center;
+  
+}
+  
+  
+
+  
