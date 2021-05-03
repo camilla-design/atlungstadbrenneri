@@ -27,11 +27,13 @@ function Meny(){
        </div>
        
         <div className="container-meny mt-3 p-4">
+            <div className="card-header-content">
         <h1>  Menyer </h1>
         <p>Menyene våre består av et solid utvalg velsmakende og mettende retter laget av råvarer av ypperste kvalitet.</p>
         
            <Button variant="primary"><a href="https://booking.gastroplanner.no/atlungstadbrenneri/t">Bestill Bord</a></Button>
            <div className="mt-5">
+           </div>
         <ScrollAnimation animateIn="fadeIn">
 
         <Tab.Container id="left-tabs" defaultActiveKey="starter">
@@ -55,22 +57,22 @@ function Meny(){
     <Col sm={9}>
       <Tab.Content>
         <Tab.Pane eventKey="starter">
-            <h1 className="mt-5">Forretter og Duggurd</h1>
+            <h1>Forretter og Duggurd</h1>
             <hr></hr>
             <Starter />
         </Tab.Pane>
         <Tab.Pane eventKey="main">
-        <h1 className="mt-5">Hovedretter</h1>
+        <h1>Hovedretter</h1>
             <hr></hr>
             <MainCourse />
         </Tab.Pane>
         <Tab.Pane eventKey="dessert">
-        <h1 className="mt-5">Dessert</h1>
+        <h1>Dessert</h1>
             <hr></hr>
             <Dessert />
         </Tab.Pane>
         <Tab.Pane eventKey="kids">
-        <h1 className="mt-5">Barnemeny</h1>
+        <h1>Barnemeny</h1>
             <hr></hr>
             <KidsMenu />
         </Tab.Pane>

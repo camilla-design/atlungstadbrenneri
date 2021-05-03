@@ -55,7 +55,7 @@ function SpiserietList() {
     <Col sm={9}>
       <Tab.Content>
         <Tab.Pane eventKey="meny">
-        <div class="card-title mt-5">
+        <div class="card-title">
       <h3> {info[0].title} </h3>
       <hr></hr>
       </div>
@@ -66,7 +66,7 @@ function SpiserietList() {
           </div>
         </Tab.Pane>
         <Tab.Pane eventKey="takeaway">
-          <div class="card-title mt-5">
+          <div class="card-title">
       <h3> {info[1].title} </h3>
       <hr></hr>
       </div>
@@ -76,7 +76,7 @@ function SpiserietList() {
         </div>
         </Tab.Pane>
         <Tab.Pane eventKey="wedding">
-        <div class="card-title mt-5">
+        <div class="card-title">
       <h3> {info[2].title} </h3>
       <hr></hr>
       </div>
@@ -86,7 +86,7 @@ function SpiserietList() {
         </div>
         </Tab.Pane>
         <Tab.Pane eventKey="memorial">
-        <div class="card-title mt-5">
+        <div class="card-title">
       <h3> {info[3].title} </h3>
       <hr></hr>
       </div>
@@ -96,7 +96,7 @@ function SpiserietList() {
         </div>
         </Tab.Pane>
         <Tab.Pane eventKey="teams">
-        <div class="card-title mt-5">
+        <div class="card-title">
       <h3> {info[4].title} </h3>
       <hr></hr>
       </div>

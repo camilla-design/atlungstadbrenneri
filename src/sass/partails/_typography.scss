@@ -39,12 +39,28 @@ h5 {
     text-transform: uppercase;
     text-align: center;
     font-size: 22px;
-    
+
+   
+    @media (min-width: 1000px) {
+        font-size: 12px;
+        padding-bottom: 0px !important;
+    }
 }
 
 .nav-button {
     text-align: center;
     padding-bottom: 30px;
+    margin-top: 30px !important;
+
+    @media (min-width: 1000px) {
+        font-size: 12px;
+        padding-bottom: 0px !important;
+        display: flex;
+        margin-top: 0px !important;
+        
+    }
+
+
 }
 
 .navbar {

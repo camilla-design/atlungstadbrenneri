@@ -12,8 +12,11 @@ body {
 .container {
     position: relative;
     height: 100vh;
+    
 
 }
+
+
 
 .fadeIn {
     animation-duration: 4s !important; 
@@ -50,11 +53,32 @@ body {
 
 .card-container {
     height: 260vh !important;
+
+    @media (min-width: 600px) {
+        height: 120vh !important;
+
+      } 
+    
+}
+
+.tab-content {
+    margin-top: 30px !important;
+    @media (min-width: 600px) {
+        width: 500px; 
+        padding-left: 50px;
+        margin-top: 0 !important;
+      } 
 }
 
 .card-img {
     text-align: center !important;
 }
+
+.card-header-content {
+    text-align: center;
+}
+
+
 
 /// menu.js
 
@@ -105,7 +129,7 @@ body {
 
 .slide-content-mobile {
     display: block;
-    @media (min-width: 700px) {
+    @media (min-width: 600px) {
         display: none !important;
 
       }     
@@ -114,8 +138,8 @@ body {
 .slide-bigger-screen {
     display: none !important;
 
-    @media (min-width: 700px) {
-        display: block;
+    @media (min-width: 600px) {
+        display: block !important;
 
       }
 }
@@ -123,7 +147,25 @@ body {
 //// welcome text image
 .image-container {
     text-align: center;
+
+    @media (min-width: 600px) {
+        img {
+            width: 600px;
+        }
+
+      }
+
 }
+
+.text-content {
+    @media (min-width: 600px) {
+        padding-top: 25%;
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+
 
 
 /// spiseriet
@@ -194,6 +236,14 @@ body {
   color: #F2F2F0 !important;
   text-align: center;
   
+}
+
+// facbook news
+.facebook-news {
+    iframe {
+        border:none;
+        
+    }
 }
   
   

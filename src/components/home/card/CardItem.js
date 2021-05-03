@@ -4,6 +4,9 @@ import { API_URL } from "../../../constants/api/API_URL";
 
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 
 function CardItem() {
     const API = API_URL + "/cards";
@@ -23,6 +26,9 @@ function CardItem() {
         return (
             <>
             <div className="container card-container">
+            <Container>
+            <Row md={2}>
+            <Col>
             <Card className="mt-4">
                 <Card.Img variant="top" src={`${API_URL}${cardInfo[0].image[0].url}`} />
                 <Card.Body>
@@ -35,6 +41,9 @@ function CardItem() {
                 <Button variant="dark"><a href="/spiseriet" variant="dark">Spiseriet</a></Button>
             </Card.Body>
         </Card>
+        </Col>
+       
+        <Col>
         <Card className="mt-4">
                 <Card.Img variant="top" src={`${API_URL}${cardInfo[1].image[0].url}`} />
                 <Card.Body>
@@ -47,6 +56,8 @@ function CardItem() {
                 <Button variant="dark"><a href="https://ecom.susoft.com/atlungstadtakeaway/home">Take Away</a></Button>
             </Card.Body>
         </Card>
+        </Col>
+        <Col>
         <Card className="mt-4">
                 <Card.Img variant="top" src={`${API_URL}${cardInfo[2].image[0].url}`} />
                 <Card.Body>
@@ -59,6 +70,9 @@ function CardItem() {
                 <Button variant="dark"><a href="/opplevelser">Opplevelser</a></Button>
             </Card.Body>
         </Card>
+        </Col>
+        
+        <Col>
         <Card className="mt-4">
                 <Card.Img variant="top" src={`${API_URL}${cardInfo[3].image[0].url}`} />
                 <Card.Body>
@@ -71,6 +85,9 @@ function CardItem() {
                 <Button variant="dark"><a href="https://ecom.susoft.com/atlungstadbutikk/home">Nettbutikk</a></Button>
             </Card.Body>
         </Card>
+        </Col>
+        </Row>
+        </Container>
         </div>
 
         </>

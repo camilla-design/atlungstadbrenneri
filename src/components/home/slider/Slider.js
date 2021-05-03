@@ -1,6 +1,7 @@
 import React from 'react';
-import SliderContent from './SliderContent';
 import SliderContentMobile from './SliderContentMobile';
+import SliderContent from './SliderContent';
+
 
 /**
  * @function Slider

@@ -22,13 +22,17 @@ function WelcomeText() {
             <ScrollAnimation animateIn="fadeIn">
           
             <div className="container mt-5 p-4">
+                <div class="flex-container">
+                <div className="text-container">
                 <h1>{textInfo[0].title}</h1>
                 <p className="mt-3">{textInfo[0].description}</p>
                 <div class="read-more-button mt-3">
                     <a href="">Les mer</a>
                 </div>
+                </div>
                 <div className="mt-3 image-container">
                     <img src={historyImage} width="300" />
+                </div>
                 </div>
             </div>
 

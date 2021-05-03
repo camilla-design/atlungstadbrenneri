@@ -41,13 +41,14 @@ function Layout() {
                     <NavLink to="/om-oss" exact className="nav-link">
                     Om oss			
                     </NavLink>
+                    <div className="nav-button">
                     <NavLink to="https://ecom.susoft.com/atlungstadbutikk/home" exact className="nav-link">
                     <i class="fas fa-shopping-basket"></i> Nettbutikk			
                     </NavLink>
                     <NavLink to="https://www.atlungstad.com" exact className="nav-link">
                     <i class="fas fa-wine-bottle"></i> Destilleriet			
                     </NavLink>
-                    <div className="mt-5 nav-button">
+                   
                     <NavLink to="https://ecom.susoft.com/atlungstadtakeaway/home" exact className="nav-link">
                      Take Away		
                     </NavLink>

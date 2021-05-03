@@ -9,21 +9,21 @@ import image3 from '../../../images/sliderImages/DSC09315.jpg';
 const SliderContent = () => {
   return (
     <Carousel fade={true} pause={false}>
-      <Carousel.Item interval={8000}>
+      <Carousel.Item interval={2000}>
         <img
           className="w-100 h-100"
           src={image1}
           alt="First slide"
         />
       </Carousel.Item>
-      <Carousel.Item interval={8000}>
+      <Carousel.Item interval={2000}>
         <img
           className="w-100 h-100"
           src={image2}
           alt="Third slide"
         />
       </Carousel.Item>
-      <Carousel.Item interval={8000}>
+      <Carousel.Item interval={2000}>
         <img
           className="w-100 h-100"
           src={image3}
