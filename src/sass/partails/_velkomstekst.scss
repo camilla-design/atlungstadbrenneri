@@ -1,0 +1,19 @@
+//// welcome text image
+.image-container {
+    text-align: center;
+
+    @media (min-width: 600px) {
+        img {
+            width: 350px;
+        }
+
+      }
+
+}
+
+.text-container {
+    @media (min-width: 600px) {
+        width: 300px;
+        margin: 0 auto;
+    }
+}

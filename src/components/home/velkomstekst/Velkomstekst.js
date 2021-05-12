@@ -17,8 +17,9 @@ function Velkomstekst() {
 
   if (textInfo) {
     return (
-      <div className="container">
         <ScrollAnimation animateIn="fadeIn">
+      <div className="container">
+       
           <div class="flex-container">
             <div className="text-container">
               <h1>{textInfo[0].title}</h1>
@@ -27,14 +28,13 @@ function Velkomstekst() {
                 <a href="/om-oss">Les mer</a>
               </div>
             </div>
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
           <div className="mt-3 image-container">
             <img src={historyImage} width="300" />
           </div>
-        </ScrollAnimation>
+          </div>
+        
       </div>
+      </ScrollAnimation>
     );
   }
   return <div></div>;

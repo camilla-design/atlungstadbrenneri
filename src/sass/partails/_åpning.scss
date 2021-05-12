@@ -1,0 +1,13 @@
+.opening-hours-contanier {
+    background: $color-primary;
+    margin: 0 auto;
+    color: $color-background;
+    text-align: center;
+    text-transform: uppercase;
+
+    .opening-container {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

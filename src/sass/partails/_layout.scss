@@ -17,6 +17,10 @@ body {
     margin: 0 auto;
     vertical-align: middle;
     padding-bottom: 50px;
+
+    @media (min-width: 600px) {
+        
+    }
     
 
 }
@@ -37,19 +41,7 @@ body {
 }
 
 
-.opening-hours-contanier {
-    background: $color-primary;
-    margin: 0 auto;
-    color: $color-background;
-    text-align: center;
-    text-transform: uppercase;
 
-    .opening-container {
-        margin-top: 24px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
 
 // card
 
@@ -70,7 +62,7 @@ body {
     padding-top: 10px;
 
     @media (min-width: 600px) {
-        height: 120vh !important;
+        width: 600px;
 
       } 
     
@@ -140,45 +132,17 @@ body {
 
 }
 
-///// IMGAE SLIDE
 
-.slide-content-mobile {
-    display: block;
+
+.flex-container {
     @media (min-width: 600px) {
-        display: none !important;
-
-      }     
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 }
 
-.slide-bigger-screen {
-    display: none !important;
 
-    @media (min-width: 600px) {
-        display: block !important;
-
-      }
-}
-
-//// welcome text image
-.image-container {
-    text-align: center;
-
-    @media (min-width: 600px) {
-        img {
-            width: 600px;
-        }
-
-      }
-
-}
-
-.text-content {
-    @media (min-width: 600px) {
-        padding-top: 25%;
-        width: 400px;
-        margin: 0 auto;
-    }
-}
 
 
 
