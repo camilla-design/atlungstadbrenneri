@@ -21,7 +21,7 @@ function Velkomstekst() {
         return (
             <ScrollAnimation animateIn="fadeIn">
           
-            <div className="container mt-5 p-4">
+            <div className="container-w-100">
                 <div class="flex-container">
                 <div className="text-container">
                 <h1>{textInfo[0].title}</h1>

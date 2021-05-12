@@ -1,9 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
-import slide1 from '../../../images/sliderImages/slide1-mobile.jpg';
-import slide2 from '../../../images/sliderImages/slide2-mobile.jpg';
-import slide3 from '../../../images/sliderImages/slide3-mobile.jpg';
+import atlungstadImage from '../../../images/sliderImages/carusel-atlungstad.jpg';
+import spiserietImage from '../../../images/sliderImages/carusel-mobile-spiseriet.jpg';
+import uteserveringImage from '../../../images/sliderImages/carusel-uteservering.jpg';
 
 
 
@@ -13,22 +13,22 @@ const SliderContentMobile = () => {
       <Carousel.Item interval={2000}>
         <img
           className="w-100 h-100"
-          src={slide1}
-          alt="First slide"
+          src={atlungstadImage}
+          alt="Atlungstad Brenneri factory"
         />
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <img
           className="w-100 h-100"
-          src={slide2}
-          alt="Third slide"
+          src={spiserietImage}
+          alt="Spiseriet guests"
         />
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <img
           className="w-100 h-100"
-          src={slide3}
-          alt="Third slide"
+          src={uteserveringImage}
+          alt="Outside earea"
         />
       </Carousel.Item>
     </Carousel>
