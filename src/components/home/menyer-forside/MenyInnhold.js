@@ -49,7 +49,7 @@ function MenyInnhold() {
         <ScrollAnimation animateIn="fadeIn">
         <Col>
         <Card className="mt-4">
-                <Card.Img variant="top" src={`${API_URL}${cardInfo[1].image[0].url}`} />
+                <Card.Img variant="top" src={`${cardInfo[1].image[0].url}`} />
                 <Card.Body>
                 <Card.Title className="card-title">{cardInfo[1].title}</Card.Title>
                 <Card.Text>
@@ -65,7 +65,7 @@ function MenyInnhold() {
         <ScrollAnimation animateIn="fadeIn">
         <Col>
         <Card className="mt-4">
-                <Card.Img variant="top" src={`${API_URL}${cardInfo[2].image[0].url}`} />
+                <Card.Img variant="top" src={`${cardInfo[2].image[0].url}`} />
                 <Card.Body>
                 <Card.Title className="card-title">{cardInfo[2].title}</Card.Title>
                 <Card.Text>
@@ -81,7 +81,7 @@ function MenyInnhold() {
         <ScrollAnimation animateIn="fadeIn">
         <Col>
         <Card className="mt-4">
-                <Card.Img variant="top" src={`${API_URL}${cardInfo[3].image[0].url}`} />
+                <Card.Img variant="top" src={`${cardInfo[3].image[0].url}`} />
                 <Card.Body>
                 <Card.Title className="card-title">{cardInfo[3].title}</Card.Title>
                 <Card.Text>
