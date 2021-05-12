@@ -15,4 +15,11 @@
             margin: 0 auto;
         }
     }
+
+    .text-content-opening {
+        @media (min-width: 600px) {
+            width: 400px;
+            margin: 0 auto;
+        }
+    }
 }

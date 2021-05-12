@@ -24,7 +24,7 @@ function Opening() {
   return (
     <ScrollAnimation animateIn="fadeIn">
       <div className="container-background opening-hours-contanier p-5">
-        <div className="text-content">
+        <div className="text-content-opening">
           <h1 className="mt-5">Åpningstider</h1>
           <p>
             Våre åpningstider ligger også på vår Facebook side:{" "}
