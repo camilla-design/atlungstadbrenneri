@@ -6,7 +6,6 @@ body {
     font-family: $font-primary;
     background: #F2F2F0 !important;
     position: absolute;
-    color: red;
 
 }
 
@@ -136,6 +135,8 @@ body {
 
 
 .flex-container {
+    display: flex;
+    flex-direction: column;
     @media (min-width: 600px) {
     display: flex;
     flex-wrap: wrap;

@@ -17,23 +17,21 @@ function Velkomstekst() {
 
   if (textInfo) {
     return (
-        <ScrollAnimation animateIn="fadeIn">
-      <div className="container">
-       
+      <ScrollAnimation animateIn="fadeIn">
+        <div className="container">
           <div class="flex-container">
             <div className="text-container">
               <h1>{textInfo[0].title}</h1>
               <p className="mt-3">{textInfo[0].description}</p>
-              <div class="read-more-button mt-3">
+              <div className="read-more-button mt-3">
                 <a href="/om-oss">Les mer</a>
               </div>
             </div>
-          <div className="mt-3 image-container">
-            <img src={historyImage} width="300" alt="old factory mens" />
+            <div className="mt-3 image-container">
+              <img src={historyImage} width="300" alt="old factory mens" />
+            </div>
           </div>
-          </div>
-        
-      </div>
+        </div>
       </ScrollAnimation>
     );
   }

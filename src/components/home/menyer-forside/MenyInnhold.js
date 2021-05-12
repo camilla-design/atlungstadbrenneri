@@ -6,7 +6,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -26,7 +25,6 @@ function MenyInnhold() {
     return (
       <>
         <div className="card-container">
-          <Container>
             <Row md={2}>
               <ScrollAnimation animateIn="fadeIn">
                 <Col>
@@ -111,7 +109,6 @@ function MenyInnhold() {
                 </Col>
               </ScrollAnimation>
             </Row>
-          </Container>
         </div>
       </>
     );
