@@ -29,7 +29,7 @@ function Velkomstekst() {
               </div>
             </div>
           <div className="mt-3 image-container">
-            <img src={historyImage} width="300" />
+            <img src={historyImage} width="300" alt="old factory mens" />
           </div>
           </div>
         
