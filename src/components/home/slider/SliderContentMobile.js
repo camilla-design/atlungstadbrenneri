@@ -1,11 +1,9 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import React from "react";
+import { Carousel } from "react-bootstrap";
 
-import atlungstadImage from '../../../images/sliderImages/carusel-atlungstad.jpg';
-import spiserietImage from '../../../images/sliderImages/carusel-mobile-spiseriet.jpg';
-import uteserveringImage from '../../../images/sliderImages/carusel-uteservering.jpg';
-
-
+import atlungstadImage from "../../../images/sliderImages/carusel-atlungstad.jpg";
+import spiserietImage from "../../../images/sliderImages/carusel-mobile-spiseriet.jpg";
+import uteserveringImage from "../../../images/sliderImages/carusel-uteservering.jpg";
 
 const SliderContentMobile = () => {
   return (
@@ -32,7 +30,7 @@ const SliderContentMobile = () => {
         />
       </Carousel.Item>
     </Carousel>
-  )
-}
+  );
+};
 
-export default SliderContentMobile; 
+export default SliderContentMobile;
