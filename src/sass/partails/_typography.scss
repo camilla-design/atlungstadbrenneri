@@ -99,13 +99,15 @@ h5 {
 }
 
 .newslink {
-
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 
     @media (min-width: 600px) {
         flex-direction: row;
+        width: 700px;
+        margin: 0 auto;
     }
 
     h4 {

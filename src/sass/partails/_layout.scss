@@ -86,6 +86,10 @@ body {
     text-align: center;
 }
 
+.card-body {
+    text-align: center;
+}
+
 
 
 /// menu.js
@@ -145,6 +149,7 @@ body {
 /// spiseriet
 .category-container {
     position: relative;
+    text-align: center;
     h1 {
         text-transform: uppercase;
         text-align: center;
@@ -158,11 +163,11 @@ body {
 
  ///// IMAGE GALLERY
 
-
   
   .image-gallery img {
     width: 100%;
     height: auto;
+    
   }
   
   

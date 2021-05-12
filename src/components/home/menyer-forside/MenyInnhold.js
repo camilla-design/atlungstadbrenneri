@@ -60,7 +60,7 @@ function MenyInnhold() {
                       </Card.Title>
                       <Card.Text>{cardInfo[1].description}</Card.Text>
                       <Button variant="dark">
-                        <a href="https://ecom.susoft.com/atlungstadtakeaway/home">
+                        <a target="_blank" href="https://ecom.susoft.com/atlungstadtakeaway/home">
                           Take Away
                         </a>
                       </Button>
@@ -100,7 +100,7 @@ function MenyInnhold() {
                       </Card.Title>
                       <Card.Text>{cardInfo[1].description}</Card.Text>
                       <Button variant="dark">
-                        <a href="https://ecom.susoft.com/atlungstadbutikk/home">
+                        <a target="_blank" href="https://ecom.susoft.com/atlungstadbutikk/home">
                           Nettbutikk
                         </a>
                       </Button>

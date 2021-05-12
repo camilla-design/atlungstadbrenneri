@@ -3,15 +3,15 @@ import Nav from "react-bootstrap/Nav";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import Home from "../home/Home";
 import Spiseriet from '../spiseriet/Spiseriet';
-import Meny from '../menu/Meny';
-import Wedding from '../wedding/Wedding';
-import Memorial from '../memorial/Memorial';
-import TeamsMeeting from '../teamsMeeting/TeamsMeeting';
-import Course from '../course/Course';
-import Experiences from '../experiences/Experiences';
-import MixedLab from '../mixedlab/MixedLab';
-import Lecture from '../lecture/Lecture';
-import Tour from '../tour/Tour';
+import Meny from '../spiseriet/meny/Meny';
+import Bryllup from '../spiseriet/bryllup/Bryllup';
+import Minnesamvær from '../spiseriet/minnesamvær/Minnesamvær';
+import Teammøte from '../spiseriet/teammøte/Teammøter';
+import KursOgMøter from '../kurs&møter/KursOgMøter';
+import Opplevelser from '../opplevelser/Opplevelser';
+import Blandelab from '../opplevelser/blandelab/Blandelab';
+import Foredrag from '../opplevelser/foredrag/Foredrag';
+import Omvisning from '../opplevelser/omvisning/Omvisning';
 import AboutUs from '../aboutUs/AboutUs';
 import Newsletter from '../newletter/Newsletter';
 
@@ -43,17 +43,17 @@ function Layout() {
                     Om oss			
                     </NavLink>
                     <div className="nav-button">
-                    <a href="https://ecom.susoft.com/atlungstadbutikk/home" exact className="nav-link">
+                    <a target="_blank" href="https://ecom.susoft.com/atlungstadbutikk/home" exact className="nav-link">
                     <i class="fas fa-shopping-basket"></i> Nettbutikk			
                     </a>
-                    <a href="https://www.atlungstad.com" exact className="nav-link">
+                    <a target="_blank" href="https://www.atlungstad.com" exact className="nav-link">
                     <i class="fas fa-wine-bottle"></i> Destilleriet			
                     </a>
                    
-                    <NavLink to="https://ecom.susoft.com/atlungstadtakeaway/home" exact className="nav-link">
+                    <NavLink target="_blank" to="https://ecom.susoft.com/atlungstadtakeaway/home" exact className="nav-link">
                      Take Away		
                     </NavLink>
-                    <Button variant="primary" href="https://booking.gastroplanner.no/atlungstadbrenneri/t">Bestill bord</Button>
+                    <Button variant="primary" target="_blank" href="https://booking.gastroplanner.no/atlungstadbrenneri/t">Bestill bord</Button>
                     </div>
                 </Nav>
             </Navbar.Collapse>
@@ -62,14 +62,14 @@ function Layout() {
 		    <Route path="/" exact component={Home}/>
             <Route path="/spiseriet" component={Spiseriet}/>
             <Route path="/meny" component={Meny} />
-            <Route path="/bryllup" component={Wedding} />
-            <Route path="/minnesamvær" component={Memorial} />
-            <Route path="/teamsmøter" component={TeamsMeeting} />
-            <Route path="/kurs-og-møter" component={Course} />
-            <Route path="/opplevelser" component={Experiences} />
-            <Route path="/blande-lab" component={MixedLab} />
-            <Route path="/foredrag" component={Lecture} />
-            <Route path="/omvisning" component={Tour} />
+            <Route path="/bryllup" component={Bryllup} />
+            <Route path="/minnesamvær" component={Minnesamvær} />
+            <Route path="/teamsmøter" component={Teammøte} />
+            <Route path="/kurs-og-møter" component={KursOgMøter} />
+            <Route path="/opplevelser" component={Opplevelser} />
+            <Route path="/blande-lab" component={Blandelab} />
+            <Route path="/foredrag" component={Foredrag} />
+            <Route path="/omvisning" component={Omvisning} />
             <Route path="/om-oss" component={AboutUs} />
             <Route path="/nyhetsbrev" component={ Newsletter } />
         </Switch>
