@@ -20,6 +20,14 @@ body {
 
 }
 
+.container-w-100-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
 
 
 
@@ -30,7 +38,6 @@ body {
 
 
 .opening-hours-contanier {
-    width: 300px;
     background: $color-primary;
     margin: 0 auto;
     color: $color-background;
@@ -58,7 +65,9 @@ body {
 }
 
 .card-container {
-    height: 260vh !important;
+    margin: 0 auto;
+    width: 350px;
+    padding-top: 30px;
 
     @media (min-width: 600px) {
         height: 120vh !important;

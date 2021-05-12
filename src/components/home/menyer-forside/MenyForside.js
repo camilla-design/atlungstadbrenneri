@@ -1,11 +1,11 @@
 import MenyInnhold from './MenyInnhold';
-import ScrollAnimation from 'react-animate-on-scroll';
+
 
 function MenyForside() {
     
     return(
-        <ScrollAnimation animateIn="fadeIn">
-        <div className="container card-container mt-5 p-5">
+        
+        <div className="card-container">
             <div className="card-header-content">
             <h1>Atlungstad Brenneri menyer</h1>
             <div className="mt-2">
@@ -17,7 +17,7 @@ function MenyForside() {
             </div>
 
         </div>
-        </ScrollAnimation>
+        
     )
 }
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { API_URL } from "../../../constants/api/API_URL";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Button from 'react-bootstrap/Button';
 
 const API = API_URL + "/apningstiders"
 
@@ -26,7 +27,7 @@ function Opening() {
 
 return(
     <ScrollAnimation animateIn='fadeIn'>
-    <div className="container opening-hours-contanier p-5">
+    <div className="container-w-100-background opening-hours-contanier p-5">
         <div className="text-content">
         <h1 className="mt-5">Åpningstider</h1>
         <p>Våre åpningstider ligger også på vår Facebook side: <a href="https://www.facebook.com/atlungstadbrenneri">Atlungstad Brenneri</a></p>
@@ -48,6 +49,8 @@ return(
                 </div>
                 
         </div>
+        <p className="mt-5">Reserver bord her: </p>
+        <Button variant="primary" href="https://booking.gastroplanner.no/atlungstadbrenneri/t">Bestill bord</Button>
         </div>
        
     </div>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { API_URL } from "../../../constants/api/API_URL";
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -25,9 +27,10 @@ function MenyInnhold() {
     if(cardInfo) {
         return (
             <>
-            <div className="container card-container">
+            <div className="card-container">
             <Container>
             <Row md={2}>
+            <ScrollAnimation animateIn="fadeIn">
             <Col>
             <Card className="mt-4">
                 <Card.Img variant="top" src={`${cardInfo[0].image[0].url}`} />
@@ -42,7 +45,8 @@ function MenyInnhold() {
             </Card.Body>
         </Card>
         </Col>
-       
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
         <Col>
         <Card className="mt-4">
                 <Card.Img variant="top" src={`${API_URL}${cardInfo[1].image[0].url}`} />
@@ -57,6 +61,8 @@ function MenyInnhold() {
             </Card.Body>
         </Card>
         </Col>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
         <Col>
         <Card className="mt-4">
                 <Card.Img variant="top" src={`${API_URL}${cardInfo[2].image[0].url}`} />
@@ -71,7 +77,8 @@ function MenyInnhold() {
             </Card.Body>
         </Card>
         </Col>
-        
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
         <Col>
         <Card className="mt-4">
                 <Card.Img variant="top" src={`${API_URL}${cardInfo[3].image[0].url}`} />
@@ -86,6 +93,7 @@ function MenyInnhold() {
             </Card.Body>
         </Card>
         </Col>
+        </ScrollAnimation>
         </Row>
         </Container>
         </div>
