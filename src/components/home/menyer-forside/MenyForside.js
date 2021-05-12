@@ -1,7 +1,7 @@
-import CardItem from './CardItem';
+import MenyInnhold from './MenyInnhold';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-function MenuCard() {
+function MenyForside() {
     
     return(
         <ScrollAnimation animateIn="fadeIn">
@@ -13,7 +13,7 @@ function MenuCard() {
             </div>
             </div>
             <div className="mt-4">
-            <CardItem />
+            <MenyInnhold />
             </div>
 
         </div>
@@ -21,4 +21,4 @@ function MenuCard() {
     )
 }
 
-export default MenuCard;
+export default MenyForside;

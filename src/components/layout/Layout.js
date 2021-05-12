@@ -13,6 +13,7 @@ import MixedLab from '../mixedlab/MixedLab';
 import Lecture from '../lecture/Lecture';
 import Tour from '../tour/Tour';
 import AboutUs from '../aboutUs/AboutUs';
+import Newsletter from '../newletter/Newsletter';
 
 import Button from 'react-bootstrap/Button'
 
@@ -42,12 +43,12 @@ function Layout() {
                     Om oss			
                     </NavLink>
                     <div className="nav-button">
-                    <NavLink to="https://ecom.susoft.com/atlungstadbutikk/home" exact className="nav-link">
+                    <a href="https://ecom.susoft.com/atlungstadbutikk/home" exact className="nav-link">
                     <i class="fas fa-shopping-basket"></i> Nettbutikk			
-                    </NavLink>
-                    <NavLink to="https://www.atlungstad.com" exact className="nav-link">
+                    </a>
+                    <a href="https://www.atlungstad.com" exact className="nav-link">
                     <i class="fas fa-wine-bottle"></i> Destilleriet			
-                    </NavLink>
+                    </a>
                    
                     <NavLink to="https://ecom.susoft.com/atlungstadtakeaway/home" exact className="nav-link">
                      Take Away		
@@ -70,6 +71,7 @@ function Layout() {
             <Route path="/foredrag" component={Lecture} />
             <Route path="/omvisning" component={Tour} />
             <Route path="/om-oss" component={AboutUs} />
+            <Route path="/nyhetsbrev" component={ Newsletter } />
         </Switch>
      
         </Router>

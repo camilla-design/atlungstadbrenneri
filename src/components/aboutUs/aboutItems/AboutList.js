@@ -77,7 +77,7 @@ function AboutList() {
          <hr></hr>
          </div>
          <div class="card-body">
-        Har du noen spørsmål, eller ønsker å komme i kontakt med oss?
+        <p>Har du noen spørsmål, eller ønsker å komme i kontakt med oss?</p>
         <ContactUs />
         </div>
         </Tab.Pane>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { API_URL } from "../../../constants/api/API_URL";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const API = API_URL + "/openings"
+const API = API_URL + "/apningstiders"
 
 
 function Opening() {

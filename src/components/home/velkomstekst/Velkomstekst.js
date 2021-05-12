@@ -6,8 +6,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import historyImage from "../../../images/hero/history1.jpg"
 
-function WelcomeText() {
-    const API = API_URL + "/welcometexts";
+function Velkomstekst() {
+    const API = API_URL + "/velkomsteksts";
     const [textInfo, setTextInfo] = useState(null)
     
     useEffect(() => {
@@ -27,7 +27,7 @@ function WelcomeText() {
                 <h1>{textInfo[0].title}</h1>
                 <p className="mt-3">{textInfo[0].description}</p>
                 <div class="read-more-button mt-3">
-                    <a href="">Les mer</a>
+                    <a href="/om-oss">Les mer</a>
                 </div>
                 </div>
                 <div className="mt-3 image-container">
@@ -48,4 +48,4 @@ function WelcomeText() {
     )
 }
 
-export default WelcomeText;
+export default Velkomstekst;

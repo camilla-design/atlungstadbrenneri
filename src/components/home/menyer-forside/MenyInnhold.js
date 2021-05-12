@@ -8,8 +8,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 
-function CardItem() {
-    const API = API_URL + "/cards";
+function MenyInnhold() {
+    const API = API_URL + "/menyer-forsides";
     
     const [cardInfo, setcardInfo] = useState(null)
     
@@ -30,7 +30,7 @@ function CardItem() {
             <Row md={2}>
             <Col>
             <Card className="mt-4">
-                <Card.Img variant="top" src={`${API_URL}${cardInfo[0].image[0].url}`} />
+                <Card.Img variant="top" src={`${cardInfo[0].image[0].url}`} />
                 <Card.Body>
                 <Card.Title className="card-title">{cardInfo[0].title}</Card.Title>
                 <Card.Text>
@@ -101,4 +101,4 @@ function CardItem() {
     )
 }
 
-export default CardItem;
+export default MenyInnhold;
