@@ -70,14 +70,23 @@ body {
 .card-container {
     margin: 0 auto;
     width: 350px;
-    padding-top: 10px;
+    padding-top: 20px;
 
     @media (min-width: 600px) {
-        width: 600px;
+        width: 690px;
         margin: 0 auto;
 
       } 
     
+}
+
+.card {
+    height: 500px;
+    
+}
+
+.col {
+    padding: 20px;
 }
 
 .tab-content {
