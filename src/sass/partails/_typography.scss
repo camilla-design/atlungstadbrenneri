@@ -98,6 +98,28 @@ h5 {
 }
 }
 
+.newslink {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
+
+    h4 {
+        padding-bottom: 20px;
+    }
+    a {
+        border: 1px solid #007bff;
+        color: #007bff;
+        padding: 20px;
+        text-transform: uppercase;
+    
+    }
+}
+
 
 
 ///// nav collapse
