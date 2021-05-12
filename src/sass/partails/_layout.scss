@@ -18,6 +18,9 @@ body {
     vertical-align: middle;
     padding-bottom: 50px;
 
+    @media (min-width: 600px) {
+        width: 600px;
+    }
     
 
 }
