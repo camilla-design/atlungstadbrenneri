@@ -19,7 +19,7 @@ body {
     padding-bottom: 50px;
 
     @media (min-width: 600px) {
-        width: 600px;
+        width: 690px;
     }
     
 
@@ -33,7 +33,18 @@ body {
     vertical-align: middle;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 
+    @media (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+}
 
 
 .fadeIn {
@@ -135,18 +146,7 @@ body {
 
 
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
 
-    @media (min-width: 600px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-}
 
 
 
