@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
 
 import ScrollAnimation from "react-animate-on-scroll";
@@ -9,19 +8,34 @@ const API = API_URL + "/apningstiders";
 
 function Opening() {
   const [opening, setOpening] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const getApi = () => {
     fetch(API)
       .then((response) => response.json())
       .then((json) => {
-        console.log(json);
         setOpening(json);
       });
   };
 
-  useEffect(() => {
-    getApi();
+  useEffect(function () {
+    try {
+      getApi();
+    } catch (error) {
+      setError(error.toString());
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  if (loading) {
+    return <div>Loading..</div>;
+  }
+
+  if (error) {
+    return <div>An error</div>;
+  }
 
   return (
     <ScrollAnimation animateIn="fadeIn">

@@ -1,33 +1,49 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import axios from "axios";
 import { API_URL } from "../../../../constants/api/API_URL";
 
-function TourList() {
-    const API = API_URL + "/omvisnings";
-    const [textInfo, setTextInfo] = useState(null)
-    
-    useEffect(() => {
-        axios.get(API)
-        .then(response => {
-            setTextInfo(response.data)
-            console.log(setTextInfo)
-            
-        })
-    }, [API])
+const API = API_URL + "/omvisnings";
 
-    if(textInfo) {
-        return (
-            <div className="mt-2 p-5">
-                <h4>{textInfo[0].title}</h4>
-                <p>{textInfo[0].description}</p>
-            </div>
-        )
+function TourList() {
+  const [texts, setText] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const getApi = () => {
+    fetch(API)
+      .then((response) => response.json())
+      .then((json) => {
+        setText(json);
+      });
+  };
+
+  useEffect(function () {
+    try {
+      getApi();
+    } catch (error) {
+      setError(error.toString());
+    } finally {
+      setLoading(false);
     }
-    return(
+  }, []);
+
+  if (loading) {
+    return <div>Loading..</div>;
+  }
+
+  if (error) {
+    return <div>An error</div>;
+  }
+  return (
+    <div className="mt-2 p-5">
+      {texts.map((text) => (
         <div>
-            
+          <h4>{text.title}</h4>
+          <p>{text.description}</p>
         </div>
-    )
+      ))}
+    </div>
+  );
 }
 
 export default TourList;

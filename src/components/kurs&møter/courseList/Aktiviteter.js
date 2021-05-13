@@ -1,31 +1,49 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
 
+const API = API_URL + "/aktiviteters";
+
 function Aktiviteter() {
-  const API = API_URL + "/aktiviteters";
-  const [textInfo, setTextInfo] = useState(null);
+  const [textInfo, setTextInfo] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get(API)
-      .then((response) => {
-        setTextInfo(response.data);
-      })
-      .catch((err) => {
-        return <div>{err}Loading...</div>;
+  const getApi = () => {
+    fetch(API)
+      .then((response) => response.json())
+      .then((json) => {
+        setTextInfo(json);
       });
-  }, [API]);
+  };
 
-  if (textInfo) {
-    return (
-      <div className="card-box">
-        <p>{textInfo[0].description}</p>
-        <img src={`${textInfo[0].image[0].url}`} width="240" alt="skiblanderen" />
-      </div>
-    );
+  useEffect(function () {
+    try {
+      getApi();
+    } catch (error) {
+      setError(error.toString());
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  if (loading) {
+    return <div>Loading..</div>;
   }
-  return <div></div>;
+
+  if (error) {
+    return <div>An error</div>;
+  }
+
+  return (
+    <div className="card-box">
+      {textInfo.map((text) => (
+        <div>
+          <p>{text.description}</p>
+          <img src={`${text.image[0].url}`} width="240" alt="skiblanderen" />
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default Aktiviteter;

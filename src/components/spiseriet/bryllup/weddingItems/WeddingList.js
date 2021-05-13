@@ -2,32 +2,55 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_URL } from "../../../../constants/api/API_URL";
 
+const API = API_URL + "/bryllups";
+
 function WeddingList() {
-  const API = API_URL + "/bryllups";
-  const [textInfo, setTextInfo] = useState(null);
+  const [texts, setText] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    axios.get(API).then((response) => {
-      setTextInfo(response.data);
-      console.log(setTextInfo);
-    });
-  }, [API]);
+  const getApi = () => {
+    fetch(API)
+      .then((response) => response.json())
+      .then((json) => {
+        setText(json);
+      });
+  };
 
-  if (textInfo) {
-    return (
-      <div className="p-4">
-        <h1> {textInfo[0].title} </h1>
-        <h4>Bryllupet er en av livets største begivenheter.</h4>
-        <p className="mt-3">{textInfo[0].description}</p>
+  useEffect(function () {
+    try {
+      getApi();
+    } catch (error) {
+      setError(error.toString());
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  if (loading) {
+    return <div>Loading..</div>;
+  }
+
+  if (error) {
+    return <div>An error</div>;
+  }
+  return (
+    <div className="p-4">
+      {texts.map((text) => (
         <div>
-          <div class="order-button mt-3">
-            <a href="mailto:post@atlungstadbrenneri.no">Bestill her</a>
-          </div>
+          <h1> {text.title} </h1>
+          <h4>Bryllupet er en av livets største begivenheter.</h4>
+          <p className="mt-3">{text.description}</p>
+        </div>
+      ))}
+
+      <div>
+        <div class="order-button mt-3">
+          <a href="mailto:post@atlungstadbrenneri.no">Bestill her</a>
         </div>
       </div>
-    );
-  }
-  return <div></div>;
+    </div>
+  );
 }
 
 export default WeddingList;

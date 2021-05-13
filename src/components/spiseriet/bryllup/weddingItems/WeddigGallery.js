@@ -4,20 +4,35 @@ import { API_URL } from "../../../../constants/api/API_URL";
 const API = API_URL + "/bryllups";
 
 function WeddingGallery() {
-  const [imaga, setImage] = useState([]);
-
-  const getApi = () => {
-    fetch(API)
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json);
-        setImage(json);
-      });
-  };
-
-  useEffect(() => {
-    getApi();
-  }, []);
+    const [imaga, setImage] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+  
+    const getApi = () => {
+      fetch(API)
+        .then((response) => response.json())
+        .then((json) => {
+            setImage(json);
+        });
+    };
+  
+    useEffect(function () {
+      try {
+        getApi();
+      } catch (error) {
+        setError(error.toString());
+      } finally {
+        setLoading(false);
+      }
+    }, []);
+  
+    if (loading) {
+      return <div>Loading..</div>;
+    }
+  
+    if (error) {
+      return <div>An error</div>;
+    }
 
   return (
     <div>

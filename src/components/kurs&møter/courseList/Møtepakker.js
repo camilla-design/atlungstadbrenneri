@@ -1,26 +1,42 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
 
 const API = API_URL + "/motepakkers";
 
 function Møtepakker() {
-  const [packages, setPackages] = useState([]);
+  const [textInfo, setTextInfo] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get(API)
-      .then((response) => {
-        setPackages(response.data);
-      })
-      .catch((err) => {
-        return <div>{err}Loading...</div>;
+  const getApi = () => {
+    fetch(API)
+      .then((response) => response.json())
+      .then((json) => {
+        setTextInfo(json);
       });
-  }, [API]);
+  };
+
+  useEffect(function () {
+    try {
+      getApi();
+    } catch (error) {
+      setError(error.toString());
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  if (loading) {
+    return <div>Loading..</div>;
+  }
+
+  if (error) {
+    return <div>An error</div>;
+  }
 
   return (
     <div>
-      {packages.map((pack) => (
+      {textInfo.map((text) => (
         <div className="mb-4 mt-4">
           <p>
             Vi har fler ulike møtepakker på Brenneriet, vi tilpasser også etter
@@ -28,8 +44,8 @@ function Møtepakker() {
             i våre unike og historiske lokaler Kontakt oss for planleggingen av
             ditt møte
           </p>
-          <h1>{pack.title}</h1>
-          <p>{pack.description}</p>
+          <h1>{text.title}</h1>
+          <p>{text.description}</p>
         </div>
       ))}
     </div>

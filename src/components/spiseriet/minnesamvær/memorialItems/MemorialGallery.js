@@ -4,24 +4,39 @@ import { API_URL } from "../../../../constants/api/API_URL";
 const API = API_URL + "/minnesamvaers";
 
 function MemorialGallery() {
-  const [image, setImage] = useState([]);
-
-  const getApi = () => {
-    fetch(API)
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json);
-        setImage(json);
-      });
-  };
-
-  useEffect(() => {
-    getApi();
-  }, []);
+    const [imaga, setImage] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+  
+    const getApi = () => {
+      fetch(API)
+        .then((response) => response.json())
+        .then((json) => {
+            setImage(json);
+        });
+    };
+  
+    useEffect(function () {
+      try {
+        getApi();
+      } catch (error) {
+        setError(error.toString());
+      } finally {
+        setLoading(false);
+      }
+    }, []);
+  
+    if (loading) {
+      return <div>Loading..</div>;
+    }
+  
+    if (error) {
+      return <div>An error</div>;
+    }
 
   return (
     <div>
-      {image.map((gallery) => (
+      {imaga.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
             <a target="_blank" href={`${gallery.image[0].url}`}>
@@ -34,7 +49,7 @@ function MemorialGallery() {
           </div>
         </div>
       ))}
-      {image.map((gallery) => (
+      {imaga.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
             <a target="_blank" href={`${gallery.image[1].url}`}>
