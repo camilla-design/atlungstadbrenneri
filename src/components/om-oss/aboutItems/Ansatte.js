@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { API_URL } from "../../../constants/api/API_URL";
 
-const API = API_URL + "/workstaffs";
+const API = API_URL + "/ansattes";
 
 
-function WorkStaff() {
+function Ansatte() {
     const [staffs, setStaff] = useState([]);
 
     const getApi = () => {
@@ -27,7 +27,7 @@ return(
             <div>
             {staffs.map(staff => 
             <div className="mb-4 mt-4 card-img">
-                <img src={`${API_URL}${staff.image[0].url}`} width="100"/>
+                <img src={`${staff.image[0].url}`} width="100"/>
                 <div className="mb-4 mt-4">
                 <h4><i class="fas fa-id-card"></i> {staff.name}</h4>
                 <p><i>{staff.title}</i></p>
@@ -42,4 +42,4 @@ return(
 );
 };
 
-export default WorkStaff;
+export default Ansatte;

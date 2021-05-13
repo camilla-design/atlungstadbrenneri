@@ -2,7 +2,7 @@ import MapAtlungstad from './MapAtlungstad';
 import ContactForm from './ContactForm';
 
 
-function ContactUs(){
+function KontaktOss(){
     return (
         <>
        <MapAtlungstad />
@@ -22,4 +22,4 @@ function ContactUs(){
     );
 }
 
-export default ContactUs;
+export default KontaktOss;

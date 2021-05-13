@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { API_URL } from "../../../constants/api/API_URL";
 
-import WorkStaff from './WorkStaff';
-import ContactUs from './ContactUs';
-import Sustainability from './Sustainability';
-import History from './History';
+import Ansatte from './Ansatte';
+import KontaktOss from './KontaktOss';
+import Bærekraft from './Bærekraft';
+import Historie from './Historie';
 import FacebookNews from './FacebookNews';
 
 
@@ -37,21 +37,21 @@ function AboutList() {
     if(info) {
         return (
             <>
-<Tab.Container id="left-tabs" defaultActiveKey="staff">
+<Tab.Container id="left-tabs" defaultActiveKey="ansatte">
   <Row >
     <Col sm={3}>
       <Nav variant="pills" className="flex-column">
         <Nav.Item>
-          <Nav.Link eventKey="staff">  KONTAKT PERSONER</Nav.Link>
+          <Nav.Link eventKey="ansatte">  KONTAKT PERSONER</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="contact"> KONTAKT OSS</Nav.Link>
+          <Nav.Link eventKey="kontakt-oss"> KONTAKT OSS</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="sustaninability"> BÆREKRAFT</Nav.Link>
+          <Nav.Link eventKey="bærekraft"> BÆREKRAFT</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="history"> HISTORIE</Nav.Link>
+          <Nav.Link eventKey="historie"> HISTORIE</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="news"> NYHETER</Nav.Link>
@@ -60,7 +60,7 @@ function AboutList() {
     </Col>
     <Col sm={9}>
       <Tab.Content>
-        <Tab.Pane eventKey="staff">
+        <Tab.Pane eventKey="ansatte">
         <div class="card-title mt-5">
          <h3> Kontakt personer </h3>
          <hr></hr>
@@ -68,36 +68,36 @@ function AboutList() {
          <div class="card-body">
         <p>Ønsker du å komme i kontakt med noen av våre ledere? Da finner du all kontakt informasjon her!</p>
         </div>
-      <WorkStaff />
+      <Ansatte />
 
         </Tab.Pane>
-        <Tab.Pane eventKey="contact">
+        <Tab.Pane eventKey="kontakt-oss">
         <div class="card-title mt-5">
          <h3> Kontakt oss </h3>
          <hr></hr>
          </div>
          <div class="card-body">
         <p>Har du noen spørsmål, eller ønsker å komme i kontakt med oss?</p>
-        <ContactUs />
+        <KontaktOss />
         </div>
         </Tab.Pane>
-        <Tab.Pane eventKey="sustaninability">
+        <Tab.Pane eventKey="bærekraft">
         <div class="card-title mt-5">
          <h3> Bærekraft </h3>
          <hr></hr>
          </div>
          <div class="card-body">
         <img src={image1} width="200"/>
-      <Sustainability />
+      <Bærekraft />
       </div>
         </Tab.Pane>
-        <Tab.Pane eventKey="history">
+        <Tab.Pane eventKey="historie">
         <div class="card-title mt-5">
          <h3> Historie </h3>
          <hr></hr>
          </div>
          <div class="card-body">
-        <History />
+        <Historie />
         </div>
         </Tab.Pane>
         <Tab.Pane eventKey="news">

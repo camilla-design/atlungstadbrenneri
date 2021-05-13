@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { API_URL } from "../../../constants/api/API_URL";
 
 
-const API = API_URL + "/sustainabilities";
+const API = API_URL + "/baerekrafts";
 
 
-function Sustainability() {
+function Bærekraft() {
     const [texts, setText] = useState([]);
 
     const getApi = () => {
@@ -38,4 +38,4 @@ return(
 );
 };
 
-export default Sustainability;
+export default Bærekraft;
