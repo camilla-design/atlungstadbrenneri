@@ -3,7 +3,7 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const Newsletter = () => {
+const Nyhetsbrev = () => {
 
     
     return(
@@ -34,7 +34,7 @@ const Newsletter = () => {
 }
 
 
-export default Newsletter;
+export default Nyhetsbrev;
 
 
 

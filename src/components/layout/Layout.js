@@ -13,7 +13,7 @@ import Blandelab from '../opplevelser/blandelab/Blandelab';
 import Foredrag from '../opplevelser/foredrag/Foredrag';
 import Omvisning from '../opplevelser/omvisning/Omvisning';
 import OmOss from '../om-oss/OmOss';
-import Newsletter from '../home/newletter/Newsletter';
+import Nyhetsbrev from '../home/nyhetsbrev/Nyhetsbrev';
 
 import Button from 'react-bootstrap/Button'
 
@@ -71,7 +71,7 @@ function Layout() {
             <Route path="/foredrag" component={Foredrag} />
             <Route path="/omvisning" component={Omvisning} />
             <Route path="/om-oss" component={OmOss} />
-            <Route path="/nyhetsbrev" component={ Newsletter } />
+            <Route path="/nyhetsbrev" component={Nyhetsbrev} />
         </Switch>
      
         </Router>
