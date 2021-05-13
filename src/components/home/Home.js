@@ -24,7 +24,7 @@ class Home extends Component {
             fontSize: "14px",
           }}
           buttonText="Jeg forstår!"
-          expires={365}
+          expires={300}
         >
           <h4>Vi bruker cookie</h4>
           <h6>
