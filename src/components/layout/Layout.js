@@ -49,10 +49,10 @@ function Layout() {
                     <a target="_blank" href="https://www.atlungstad.com" exact className="nav-link">
                     <i class="fas fa-wine-bottle"></i> Destilleriet			
                     </a>
-                   
-                    <NavLink target="_blank" to="https://ecom.susoft.com/atlungstadtakeaway/home" exact className="nav-link">
-                     Take Away		
-                    </NavLink>
+                   <br></br>
+                    <a target="_blank" href="https://ecom.susoft.com/atlungstadtakeaway/home" exact className="nav-link">
+                    Take Away		
+                    </a>
                     <Button variant="primary" target="_blank" href="https://booking.gastroplanner.no/atlungstadbrenneri/t">Bestill bord</Button>
                     </div>
                 </Nav>
