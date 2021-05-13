@@ -10,6 +10,7 @@ import FacebookNews from './FacebookNews';
 
 
 import image1 from '../../../images/hero/sustainability.png';
+import image2 from '../../../images/hero/history1.jpg';
 
 import Tab from 'react-bootstrap/Tab';
 import Row from 'react-bootstrap/Row';
@@ -87,7 +88,7 @@ function AboutList() {
          <hr></hr>
          </div>
          <div class="card-body">
-        <img src={image1} width="200"/>
+        <img src={image1} width="200" alt="bærekraft logo"/>
       <Bærekraft />
       </div>
         </Tab.Pane>
@@ -98,6 +99,7 @@ function AboutList() {
          </div>
          <div class="card-body">
         <Historie />
+        <img src={image2} width="300" className="mt-3" alt="gammle Atlungstad Brenneri"/>
         </div>
         </Tab.Pane>
         <Tab.Pane eventKey="news">

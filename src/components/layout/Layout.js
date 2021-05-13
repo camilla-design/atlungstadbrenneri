@@ -13,7 +13,7 @@ import Blandelab from '../opplevelser/blandelab/Blandelab';
 import Foredrag from '../opplevelser/foredrag/Foredrag';
 import Omvisning from '../opplevelser/omvisning/Omvisning';
 import OmOss from '../om-oss/OmOss';
-import Newsletter from '../newletter/Newsletter';
+import Newsletter from '../home/newletter/Newsletter';
 
 import Button from 'react-bootstrap/Button'
 

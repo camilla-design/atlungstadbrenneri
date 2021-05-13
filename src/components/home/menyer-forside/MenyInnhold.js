@@ -15,9 +15,10 @@ function MenyInnhold() {
   const [cardInfo, setcardInfo] = useState(null);
 
   useEffect(() => {
-    axios.get(API).then((response) => {
+    axios.
+    get(API)
+    .then((response) => {
       setcardInfo(response.data);
-      console.log(response.data);
     });
   }, [API]);
 

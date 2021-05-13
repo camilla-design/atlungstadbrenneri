@@ -8,7 +8,7 @@ function Bryllup() {
   return (
     <>
       <div className="hero-container mt-5">
-        <img className="d-block w-100" alt="hero" src={image1} />
+        <img className="d-block w-100" alt="hero" src={image1} alt="wedding" />
       </div>
       <div class="back-button mt-3 p-3">
         <a href="/spiseriet">

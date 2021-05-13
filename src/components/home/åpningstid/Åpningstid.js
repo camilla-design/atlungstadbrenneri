@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
+
 import ScrollAnimation from "react-animate-on-scroll";
 import Button from "react-bootstrap/Button";
 

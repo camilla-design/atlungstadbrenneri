@@ -1,3 +1,4 @@
+import { Component } from "react";
 import CookieConsent from "react-cookie-consent";
 
 import Slider from "../home/slider/Slider";
@@ -7,38 +8,44 @@ import MenyForside from "./menyer-forside/MenyForside";
 
 import Footer from "../footer/Footer";
 
-function Home() {
-  return (
-    <>
-      <CookieConsent
-        debug={true}
-        location="bottom"
-        style={{ background: "#081D6B", textAlign: "left" }}
-        buttonStyle={{ color: "#081D6B", background: "#fff", fontSize: "14px" }}
-        buttonText="Jeg forstår!"
-        expires={365}
-      >
-        <h4>Vi bruker cookie</h4>
-        <h6>
-          Vi kan plassere disse for analyse av besøkende data, for å forbedre
-          nettstedet vårt, vise personlig innhold og for å gi deg en flott
-          nettsideopplevelse. For mer informasjon om cookien bruker vi
-          innstillingene.
-        </h6>
-        <a href="">Les om våre policy her</a>
-      </CookieConsent>
-      <Slider />
+class Home extends Component {
+  render() {
+    return (
+      <>
+        <CookieConsent
+          debug={true}
+          location="bottom"
+          style={{ background: "#081D6B", textAlign: "left" }}
+          buttonStyle={{
+            color: "#081D6B",
+            background: "#fff",
+            fontSize: "14px",
+          }}
+          buttonText="Jeg forstår!"
+          expires={365}
+        >
+          <h4>Vi bruker cookie</h4>
+          <h6>
+            Vi kan plassere disse for analyse av besøkende data, for å forbedre
+            nettstedet vårt, vise personlig innhold og for å gi deg en flott
+            nettsideopplevelse. For mer informasjon om cookien bruker vi
+            innstillingene.
+          </h6>
+          <a href="">Les om våre policy her</a>
+        </CookieConsent>
+        <Slider />
 
-      <Velkomstekst />
-      <Åpningstid />
-      <MenyForside />
-      <div class="newslink  mb-5 p-5">
-        <h4>Ønsker du informasjon fra Brenneriet direkte i din innboks?</h4>
-        <a href="/nyhetsbrev">Meld deg på vårt nyhetsbrev</a>
-      </div>
-      <Footer />
-    </>
-  );
+        <Velkomstekst />
+        <Åpningstid />
+        <MenyForside />
+        <div class="newslink  mb-5 p-5">
+          <h4>Ønsker du informasjon fra Brenneriet direkte i din innboks?</h4>
+          <a href="/nyhetsbrev">Meld deg på vårt nyhetsbrev</a>
+        </div>
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default Home;
