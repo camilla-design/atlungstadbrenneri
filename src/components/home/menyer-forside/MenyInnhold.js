@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
 
@@ -51,9 +52,7 @@ function MenyInnhold() {
                     </Card.Title>
                     <Card.Text>{cardInfo[0].description}</Card.Text>
                     <Button variant="dark">
-                      <a href="/spiseriet" variant="dark">
-                        Spiseriet
-                      </a>
+                    <Link to="/spiseriet">Spiseriet</Link>
                     </Button>
                   </Card.Body>
                 </Card>
@@ -90,7 +89,7 @@ function MenyInnhold() {
                     </Card.Title>
                     <Card.Text>{cardInfo[1].description}</Card.Text>
                     <Button variant="dark">
-                      <a href="/opplevelser">Opplevelser</a>
+                    <Link to="/opplevelser">Opplevelser</Link>
                     </Button>
                   </Card.Body>
                 </Card>

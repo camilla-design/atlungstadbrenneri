@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { API_URL } from "../../../constants/api/API_URL";
+import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import historyImage from "../../../images/hero/history1.jpg";
@@ -47,7 +48,7 @@ function Velkomstekst() {
                 <h1>{text.title}</h1>
                 <p className="mt-3">{text.description}</p>
                 <div className="read-more-button mt-3">
-                  <a href="/om-oss">Les mer</a>
+                <Link to="/om-oss">Les mer</Link>
                 </div>
               </div>
               <div className="mt-3 image-container">
