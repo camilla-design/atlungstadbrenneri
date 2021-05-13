@@ -2,6 +2,8 @@ import WeddingList from "./weddingItems/WeddingList";
 import WeddingGallery from "./weddingItems/WeddigGallery";
 import Footer from "../../footer/Footer";
 
+import { Link } from "react-router-dom";
+
 import image1 from "../../../images/hero/wedding.jpg";
 
 function Bryllup() {
@@ -11,9 +13,9 @@ function Bryllup() {
         <img className="d-block w-100" alt="hero" src={image1} alt="wedding" />
       </div>
       <div class="back-button mt-3 p-3">
-        <a href="/spiseriet">
+        <Link to="/spiseriet">
           <i class="far fa-arrow-alt-circle-left"></i> Tilbake
-        </a>
+        </Link>
       </div>
       <div className="container">
         <WeddingList />

@@ -36,7 +36,7 @@ function CourseList() {
               </div>
               <div class="card-body">
                 <Aktiviteter />
-                <a href="">Bestill</a>
+                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
               </div>
             </Tab.Pane>
             <Tab.Pane eventKey="møtepakker">
@@ -52,7 +52,7 @@ function CourseList() {
                   planleggingen av ditt møte.
                 </p>
                 <Møtepakker />
-                <a href="">Bestill</a>
+                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
                 <div>
                   <img src={image1} width="200" alt="møtepakker" />
                 </div>
@@ -66,7 +66,7 @@ function CourseList() {
               <div class="card-body">
                 <p>Våre møtelokaler</p>
                 <Møterom />
-                <a href="">Bestill</a>
+                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
                 <div>
                   <img src={image2} width="200" alt="Møtelokaler" />
                 </div>
