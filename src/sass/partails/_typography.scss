@@ -20,61 +20,10 @@ h5 {
     color: #F80909 !important;
 }
 
-.card-title {
-    font-family:'Libre Baskerville', serif !important;
-    font-weight: bold !important;
-}
-
-.card-container {
-    a {
-        color:  #F2F2F0 !important;
-    }
-}
 
 
+//// READ MORE BUTTON
 
-.nav-link {
-    font-weight: bold !important;
-    font-family:'Libre Baskerville', serif !important;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 22px;
-
-   
-    @media (min-width: 1000px) {
-        font-size: 12px;
-        padding-bottom: 0px !important;
-    }
-}
-
-.nav-button {
-    text-align: center;
-    padding-bottom: 30px;
-    margin-top: 30px !important;
-
-    .btn {
-        margin-top: 30px !important;
-    }
-
-    @media (min-width: 1000px) {
-        font-size: 12px;
-        padding-bottom: 0px !important;
-        display: flex;
-        margin-top: 0px !important;
-
-        .btn {
-            margin-top: 0px !important;
-        }
-        
-    }
-
-
-}
-
-.navbar {
-    position: absolute !important;
-    width: 100%;
-}
 
 .read-more-button {
     background-color:#343A40!important;
@@ -91,6 +40,8 @@ h5 {
 }
 }
 
+/// ORDER BUTTON
+
 .order-button {
     background-color:#007bff!important;
     text-align: center;
@@ -106,6 +57,7 @@ h5 {
 }
 }
 
+/// NEWSLINK
 .newslink {
     display: flex;
     flex-direction: column;

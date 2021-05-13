@@ -1,0 +1,45 @@
+/// menu.js
+
+
+.container-meny {
+    text-align: center;
+
+    a {
+        color: #F2F2F0 !important;
+    }
+
+    .nav-item {
+        a {
+            
+            color: #83837f!important;
+    
+        }
+    }
+    .nav-link:hover {
+        background-color: #007bff !important;
+        color:  #F2F2F0 !important;
+    }
+    
+    .nav-link.active {
+    
+        color:  #F2F2F0 !important;
+        background-color:#343A40!important;
+    
+    }
+    
+
+    
+}
+
+.nav-link:hover {
+    background-color: #007bff !important;
+    color:  #F2F2F0 !important;
+}
+
+.nav-link.active {
+
+    color:  #F2F2F0 !important;
+    background-color:#343A40!important;
+
+}
+

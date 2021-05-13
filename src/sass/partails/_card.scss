@@ -1,0 +1,53 @@
+//// TYPOGARPHY   ////
+.card-title {
+    font-family:'Libre Baskerville', serif !important;
+    font-weight: bold !important;
+}
+
+.card-container {
+    a {
+        color:  #F2F2F0 !important;
+    }
+}
+
+.card-body {
+    a {
+        background-color:#343A40!important;
+        padding: 10px;
+        color: #F2F2F0 !important;
+    }
+}
+
+/// CARD BODY ///
+
+.card-background, .card-header {
+    background-color:#343A40!important;
+    text-align: center;
+    border: none !important;
+
+    h2 {
+        text-align: center !important;
+    }
+
+}
+
+.tab-content {
+    margin-top: 30px !important;
+    @media (min-width: 600px) {
+        width: 500px; 
+        padding-left: 50px;
+        margin-top: 0 !important;
+      } 
+}
+
+.card-img {
+    text-align: center !important;
+}
+
+.card-header-content {
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}

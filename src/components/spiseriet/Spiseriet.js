@@ -16,7 +16,7 @@ class Spiseriet extends Component {
           </div>
           <div className="category-container p-3 pt-5">
             <h1> - Spiseriet -</h1>
-            <h3>Er du sulten?</h3>
+            <h2>Er du sulten?</h2>
             <p>
               Her kan du se alle våre menyer! Enten du vil spise hos oss, eller
               bestille av vår take away meny.

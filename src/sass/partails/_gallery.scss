@@ -1,0 +1,38 @@
+///// IMAGE GALLERY
+
+  
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive-gallery {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media (max-width: 700px) {
+    .responsive-gallery {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .responsive-gallery {
+      width: 50%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
