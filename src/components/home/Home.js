@@ -5,8 +5,10 @@ import Slider from "../home/slider/Slider";
 import Velkomstekst from "./velkomstekst/Velkomstekst";
 import Åpningstid from "./åpningstid/Åpningstid";
 import MenyForside from "./menyer-forside/MenyForside";
+import Nyhetsbrev from "./nyhetsbrev/Nyhetsbrev";
 
 import Footer from "../footer/Footer";
+
 
 class Home extends Component {
   render() {
@@ -38,10 +40,7 @@ class Home extends Component {
         <Velkomstekst />
         <Åpningstid />
         <MenyForside />
-        <div class="newslink  mb-5 p-5">
-          <h4>Ønsker du informasjon fra Brenneriet direkte i din innboks?</h4>
-          <a href="/nyhetsbrev">Meld deg på vårt nyhetsbrev</a>
-        </div>
+        <Nyhetsbrev />
         <Footer />
       </>
     );
