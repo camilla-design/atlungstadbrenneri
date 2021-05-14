@@ -38,7 +38,7 @@ function LabGallery() {
 
 return(
 
-            <div>
+            <div className="gallery">
             {imaga.map(gallery => 
             <div className="mb-4 mt-4 image-gallery">
                 <div className="responsive-gallery">

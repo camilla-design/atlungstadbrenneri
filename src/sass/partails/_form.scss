@@ -8,9 +8,33 @@
 
   
 .footer-container {
-  position: relative !important;
-  background: black;
-  color: #F2F2F0 !important;
+  border: 1px solid white !important;
+  background: rgb(192, 192, 192) !important;
+  color: #000 !important;
   text-align: center;
+  width: 100%;
+  padding-bottom: 40px;
+
+  a {
+    color: #007BFF !important;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif !important;
+
+    &:hover {
+      color: #007BFF !important;
+    }
+  }
+
+  .social-media-links {
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 300px;
+    }
+    
+  }
+  
   
 }

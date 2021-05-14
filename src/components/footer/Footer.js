@@ -15,11 +15,18 @@ function Footer() {
                 </div>
                 <div className="social-media-links mt-4">
                     <h5>Sosiale medier</h5>
+                    <div class="flex-container">
                     <p><a href="https://www.facebook.com/atlungstadbrenneri" ><i class="fab fa-facebook-f"> Facebook</i></a></p>
                     <p><a href="https://www.instagram.com/atlungstadbrenneri/" ><i class="fab fa-instagram"> Instagram</i></a></p>
+                    </div>
                 </div>
                 <div className="sponsore-links">
                     <h5>Linker</h5>
+                    <p><a href="dehistoriske.no">De historiske Hoteller og spisesteder</a></p>
+                    <p><a href="anno.no">Anno Musene</a></p>
+                    <p><a href="stangevestbygd.no">Stange Vestbygd</a></p>
+                    <p><a href="atlungstadgolf.no">Atlungstad Golf</a></p>
+                    <p><a href="https://www.tripadvisor.com/Attraction_Review-g2416413-d3478694-Reviews-Atlungstad_Distillery-Stange_Municipality_Hedmark_Eastern_Norway.html">Tripadvisor</a></p>
                 </div>
             </div>
         </div>

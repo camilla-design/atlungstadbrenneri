@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 const Nyhetsbrev = () => {
   return (
     <>
-      <div className="container mt-5 pt-5">
+      <div className="container nyhetsbrev">
         <h1>Nyhetsbrev</h1>
         <p>Meld deg opp til vårt nyhetsbrev her!</p>
         <Form
