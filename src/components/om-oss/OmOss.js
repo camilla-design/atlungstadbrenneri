@@ -2,7 +2,7 @@ import { Component } from "react";
 import AboutList from "./aboutItems/AboutList";
 import Footer from "../footer/Footer";
 
-import image2 from "../../images/hero/about.jpg";
+import image2 from "../../images/hero/om-oss.jpg";
 
 class AboutUs extends Component {
   render() {

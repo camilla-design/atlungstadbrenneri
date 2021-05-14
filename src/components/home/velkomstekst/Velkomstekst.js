@@ -3,7 +3,7 @@ import { API_URL } from "../../../constants/api/API_URL";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 
-import historyImage from "../../../images/hero/history1.jpg";
+import image1 from "../../../images/hero/historie-menn.jpg";
 
 const API = API_URL + "/velkomsteksts";
 
@@ -52,7 +52,7 @@ function Velkomstekst() {
                 </div>
               </div>
               <div className="mt-3 image-container">
-                <img src={historyImage} width="300" alt="old factory mens" />
+                <img src={image1} width="300" alt="old factory mens" />
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import TeamMeetingList from "./teamMeetingItem/TeamMeetingList";
 import Footer from "../../footer/Footer";
 
 import { Link } from "react-router-dom";
-import image1 from "../../../images/hero/team-meeting.jpg";
+import image1 from "../../../images/hero/teamsmøte.jpg";
 
 function Teammøte() {
   return (

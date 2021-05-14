@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import Button from "react-bootstrap/Button";
 
-import image1 from "../../../images/hero/mixlab.jpg";
+import image1 from "../../../images/hero/blandelab.jpg";
 
 function Blandelab() {
   return (

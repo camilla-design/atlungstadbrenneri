@@ -4,7 +4,7 @@ import Footer from "../../footer/Footer";
 
 import { Link } from "react-router-dom";
 
-import image1 from "../../../images/hero/wedding.jpg";
+import image1 from "../../../images/hero/wedding-hero.jpg";
 
 function Bryllup() {
   return (

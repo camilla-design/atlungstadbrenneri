@@ -4,7 +4,7 @@ import Footer from "../footer/Footer";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
-import image2 from "../../images/sliderImages/DSC09315.jpg";
+import image2 from "../../images/sliderImages/bigger-carusel-spiseriet.jpg";
 
 class Spiseriet extends Component {
   render() {

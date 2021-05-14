@@ -2,8 +2,8 @@ import Aktiviteter from "./Aktiviteter";
 import Møtepakker from "./Møtepakker";
 import Møterom from "./Møterom";
 
-import image1 from "../../../images/hero/package.jpg";
-import image2 from "../../../images/hero/meeting.JPG";
+import image1 from "../../../images/hero/møtepakker.jpg";
+import image2 from "../../../images/hero/møterom.jpg";
 
 import Tab from "react-bootstrap/Tab";
 import Row from "react-bootstrap/Row";
@@ -36,8 +36,10 @@ function CourseList() {
               </div>
               <div class="card-body">
                 <Aktiviteter />
-                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
               </div>
+              <div class="order-button">
+                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
+                </div>
             </Tab.Pane>
             <Tab.Pane eventKey="møtepakker">
               <div class="card-title mt-5">
@@ -52,11 +54,13 @@ function CourseList() {
                   planleggingen av ditt møte.
                 </p>
                 <Møtepakker />
-                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
                 <div>
                   <img src={image1} width="200" alt="møtepakker" />
                 </div>
               </div>
+              <div class="order-button">
+                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
+                </div>
             </Tab.Pane>
             <Tab.Pane eventKey="møterom">
               <div class="card-title mt-5">
@@ -66,11 +70,14 @@ function CourseList() {
               <div class="card-body">
                 <p>Våre møtelokaler</p>
                 <Møterom />
-                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
                 <div>
                   <img src={image2} width="200" alt="Møtelokaler" />
                 </div>
-              </div>
+                </div>
+                <div class="order-button">
+                <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
+                </div>
+              
             </Tab.Pane>
           </Tab.Content>
         </Col>

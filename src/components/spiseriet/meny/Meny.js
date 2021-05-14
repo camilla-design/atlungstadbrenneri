@@ -2,6 +2,7 @@ import Starter from "./menyer/Forretter";
 import Hovedretter from "./menyer/Hovedretter";
 import Dessert from "./menyer/Dessert";
 import Barnemeny from "./menyer/Barnemeny";
+import MenyGalleri from './galleri/MenyGalleri';
 import Footer from "../../footer/Footer";
 
 import Tab from "react-bootstrap/Tab";
@@ -12,7 +13,7 @@ import Button from "react-bootstrap/Button";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
-import image1 from "../../../images/hero/menu.jpg";
+import image1 from "../../../images/hero/meny1.jpg";
 
 function Meny() {
   return (
@@ -90,6 +91,7 @@ function Meny() {
             </Tab.Container>
           </ScrollAnimation>
         </div>
+        <MenyGalleri />
       </div>
       <Footer />
     </>

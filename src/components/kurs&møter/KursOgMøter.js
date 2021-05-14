@@ -4,7 +4,7 @@ import Footer from "../footer/Footer";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
-import image2 from "../../images/hero/course.jpg";
+import image2 from "../../images/hero/kurs.jpg";
 
 class KursOgMøter extends Component {
   render() {

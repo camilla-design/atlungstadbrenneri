@@ -5,7 +5,7 @@ import Footer from "../../footer/Footer";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 
-import image1 from "../../../images/hero/memorial.jpg";
+import image1 from "../../../images/hero/minnestund.jpg";
 
 function Minnesamvær() {
   return (

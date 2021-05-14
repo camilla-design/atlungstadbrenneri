@@ -4,7 +4,7 @@ import LectureGallery from "./lectureItems/LectureGallery";
 import { Link } from "react-router-dom";
 import Footer from "../../footer/Footer";
 
-import image1 from "../../../images/hero/lecture.jpg";
+import image1 from "../../../images/hero/foredrag.jpg";
 import Button from "react-bootstrap/Button";
 
 function Foredrag() {

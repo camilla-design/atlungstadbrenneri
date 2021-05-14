@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
 
 const API = API_URL + "/moteroms";

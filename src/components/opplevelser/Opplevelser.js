@@ -4,7 +4,7 @@ import Footer from "../footer/Footer";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
-import image2 from "../../images/hero/experience.JPG";
+import image2 from "../../images/hero/opplevelser.jpg";
 
 class Opplevelser extends Component {
   render() {
