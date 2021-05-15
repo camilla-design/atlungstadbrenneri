@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 function Foredrag() {
   return (
     <>
-      <div className="hero-container mt-5">
+      <div className="hero-container">
         <img className="d-block w-100" alt="hero" src={image1} />{" "}
       </div>{" "}
       <div class="back-button mt-3 p-3">

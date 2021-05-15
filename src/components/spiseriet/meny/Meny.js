@@ -18,7 +18,7 @@ import image1 from "../../../images/hero/meny1.jpg";
 function Meny() {
   return (
     <>
-      <div className="hero-container mt-5">
+      <div className="hero-container">
         <img className="d-block w-100" alt="hero" src={image1} />
       </div>
       <div class="back-button mt-2 p-3">

@@ -8,7 +8,7 @@ class AboutUs extends Component {
   render() {
     return (
       <>
-        <div className="hero-container mt-5">
+        <div className="hero-container">
           <img className="d-block w-100 h-100" alt="hero" src={image2} />
         </div>
         <div className="category-container mt-4 p-3">

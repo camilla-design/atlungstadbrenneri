@@ -1,6 +1,8 @@
+import { Component } from 'react';
 import logo from '../../images/logo/logo.png';
-function Footer() {
-    
+
+class Footer extends Component {
+    render() {
     return(
         <div className="footer-container pt-5">
             <div className="footer-logo">
@@ -31,6 +33,7 @@ function Footer() {
             </div>
         </div>
     )
+}
 }
 
 export default Footer;

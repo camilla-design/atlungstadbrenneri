@@ -1,5 +1,4 @@
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import Home from "../home/Home";
 import Spiseriet from '../spiseriet/Spiseriet';
@@ -20,44 +19,63 @@ import Button from 'react-bootstrap/Button'
 import logo from '../../images/logo/logo.png';
 
 function Layout() {
+
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
+
     return (
         <Router>
-        <Navbar bg="dark" variant="dark" expand="lg"  sticky="top">
-            <Navbar.Brand href="/"><img src={logo} width="50" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                <NavLink to="/" exact className="nav-link">
-												
-                    </NavLink>
-                    <NavLink to="/spiseriet" exact className="nav-link">
+        <nav className="navigation">
+            <div className="nav-container">
+            <NavLink to="/" className="nav-logo"><img src={logo} width="50" /></NavLink>
+            <ul class={click ? "nav-menu active" : "nav-menu"}>
+                <li className="nav-item">
+                <NavLink to="/spiseriet" activeClassName="active" exact className="nav-link"  onClick={handleClick}>
 						Spiseriet						
                     </NavLink>
-                    <NavLink to="/kurs-og-møter" exact className="nav-link">
+                </li>
+                <li className="nav-item">
+                <NavLink to="/kurs-og-møter" activeClassName="active" exact className="nav-link"  onClick={handleClick}>
                     Kurs og møter					
                     </NavLink>
-                    <NavLink to="/opplevelser" exact className="nav-link">
+                </li>
+                <li className="nav-item">
+                <NavLink to="/opplevelser" activeClassName="active" exact className="nav-link"  onClick={handleClick}>
                     Opplevelser				
                     </NavLink>
-                    <NavLink to="/om-oss" exact className="nav-link">
+                </li>
+                <li className="nav-item">
+                <NavLink to="/om-oss" activeClassName="active" exact className="nav-link" >
                     Om oss			
                     </NavLink>
-                    <div className="nav-button">
-                    <a target="_blank" href="https://ecom.susoft.com/atlungstadbutikk/home" exact className="nav-link">
+                </li>
+                <li className="nav-item">
+                <a className="nav-link" activeClassName="active" target="_blank" href="https://ecom.susoft.com/atlungstadbutikk/home" exact className="nav-link">
                     <i class="fas fa-shopping-basket"></i> Nettbutikk			
                     </a>
-                    <a target="_blank" href="https://www.atlungstad.com" exact className="nav-link">
+                </li>
+                <li className="nav-item">
+                <a className="nav-link" activeClassName="active" target="_blank" href="https://www.atlungstad.com" exact className="nav-link">
                     <i class="fas fa-wine-bottle"></i> Destilleriet			
                     </a>
-                   <br></br>
-                    <a target="_blank" href="https://ecom.susoft.com/atlungstadtakeaway/home" exact className="nav-link">
+                </li>
+                <li className="nav-item">
+                <a className="nav-link" activeClassName="active" target="_blank" href="https://ecom.susoft.com/atlungstadtakeaway/home" exact className="nav-link">
                     Take Away		
                     </a>
-                    <Button variant="primary" target="_blank" href="https://booking.gastroplanner.no/atlungstadbrenneri/t">Bestill bord</Button>
-                    </div>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+                </li>
+                <li className="order-button-nav">
+                <Button variant="primary" target="_blank" href="https://booking.gastroplanner.no/atlungstadbrenneri/t">Bestill bord</Button>
+                </li>
+            </ul>
+            <div className="nav-icon" onClick={handleClick}>
+                <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+            </div>
+            </div>
+                    
+                
+        </nav>
 		<Switch>
 		    <Route path="/" exact component={Home}/>
             <Route path="/spiseriet" component={Spiseriet}/>

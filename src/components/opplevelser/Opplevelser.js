@@ -11,7 +11,7 @@ class Opplevelser extends Component {
     return (
       <>
         <ScrollAnimation animateIn="fadeIn">
-          <div className="hero-container mt-5">
+          <div className="hero-container">
             <img className="d-block w-100 h-100" alt="hero" src={image2} />
           </div>
           <div className="category-container p-3 pt-5">
