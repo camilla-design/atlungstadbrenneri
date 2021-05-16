@@ -46,6 +46,8 @@ h5 {
     background-color:#007bff!important;
     text-align: center;
     padding: 10px !important;
+    width: 200px;
+    margin: 0 auto;
 
     &:hover {
         background-color:#83837f!important;
@@ -105,4 +107,29 @@ hr {
       i {
           color: #28a745;
       }
+  }
+
+
+  // ansatte
+
+  .staff-card {
+    
+  .staff-information {
+      p {
+          color: #343A40!important;
+
+          a {
+            color: #343A40!important;
+        }
+      }
+      @media (min-width: 600px) {
+          text-align: left;
+      }
+    }
+
+    @media (min-width: 600px) {
+        display: flex;
+        width: 200px;
+    }
+      
   }

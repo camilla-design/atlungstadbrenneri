@@ -12,6 +12,7 @@ import Nav from "react-bootstrap/Nav";
 
 function CourseList() {
   return (
+    <div className="menu-navigation">
     <Tab.Container id="left-tabs" defaultActiveKey="aktiviteter">
       <Row>
         <Col sm={3}>
@@ -83,6 +84,7 @@ function CourseList() {
         </Col>
       </Row>
     </Tab.Container>
+    </div>
   );
 }
 

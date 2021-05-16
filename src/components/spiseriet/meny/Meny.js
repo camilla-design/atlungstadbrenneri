@@ -35,12 +35,12 @@ function Meny() {
             retter laget av råvarer av ypperste kvalitet.
           </p>
 
-          <Button variant="primary">
+          <div className="order-button">
             <a href="https://booking.gastroplanner.no/atlungstadbrenneri/t">
               Bestill Bord
-            </a>
-          </Button>
-          <div className="mt-5"></div>
+              </a>
+            </div>
+          <div className="mt-5 menu-navigation">
           <ScrollAnimation animateIn="fadeIn">
             <Tab.Container id="left-tabs" defaultActiveKey="starter">
               <Row>
@@ -90,6 +90,7 @@ function Meny() {
               </Row>
             </Tab.Container>
           </ScrollAnimation>
+        </div>
         </div>
         <MenyGalleri />
       </div>

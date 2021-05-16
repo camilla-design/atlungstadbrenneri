@@ -37,13 +37,15 @@ function Ansatte() {
   return (
     <div>
       {texts.map((staff) => (
+        <div className="staff-card">
         <div className="mb-4 mt-4 card-img">
           <img
             src={`${staff.image[0].url}`}
             width="100"
             alt="Ansatte hos Atlungstad Brenneri"
           />
-          <div className="mb-4 mt-4">
+          </div>
+          <div className="mb-4 mt-4 staff-information">
             <h4>
               <i class="fas fa-id-card"></i> {staff.name}
             </h4>

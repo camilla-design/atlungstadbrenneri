@@ -32,6 +32,7 @@ function AboutList() {
   if (info) {
     return (
       <>
+      <div className="menu-navigation">
         <Tab.Container id="left-tabs" defaultActiveKey="ansatte">
           <Row>
             <Col sm={3}>
@@ -78,8 +79,9 @@ function AboutList() {
                       Har du noen spørsmål, eller ønsker å komme i kontakt med
                       oss?
                     </p>
+                    </div>
                     <KontaktOss />
-                  </div>
+                 
                 </Tab.Pane>
                 <Tab.Pane eventKey="bærekraft">
                   <div class="card-title mt-5">
@@ -125,6 +127,7 @@ function AboutList() {
             </Col>
           </Row>
         </Tab.Container>
+        </div>
       </>
     );
   }

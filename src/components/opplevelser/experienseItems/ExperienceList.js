@@ -22,6 +22,7 @@ function ExperienceList() {
   if (info) {
     return (
       <>
+      <div className="menu-navigation">
         <Tab.Container id="left-tabs" defaultActiveKey="blandelab">
           <Row>
             <Col sm={3}>
@@ -73,6 +74,7 @@ function ExperienceList() {
             </Col>
           </Row>
         </Tab.Container>
+        </div>
       </>
     );
   }
