@@ -3,14 +3,12 @@ import MemorialGallery from "./memorialItems/MemorialGallery";
 import Footer from "../../footer/Footer";
 
 import { Link } from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 
 import image1 from "../../../images/hero/minnestund.jpg";
 
 function Minnesamvær() {
   return (
     <>
-      <ScrollAnimation animateIn="fadeIn">
         <div className="hero-container">
           <img className="d-block w-100" alt="hero" src={image1} />
         </div>
@@ -22,11 +20,10 @@ function Minnesamvær() {
 
         <div className="container">
           <MemorialList />
-          <div className="container mb-5">
+          <div className="container">
             <MemorialGallery />
           </div>
         </div>
-      </ScrollAnimation>
       <Footer />
     </>
   );

@@ -23,6 +23,7 @@ function SpiserietList() {
   if (info) {
     return (
       <>
+      <div className="menu-navigation">
         <Tab.Container id="left-tabs" defaultActiveKey="meny">
           <Row>
             <Col sm={3}>
@@ -106,10 +107,13 @@ function SpiserietList() {
             </Col>
           </Row>
         </Tab.Container>
+        </div>
       </>
     );
   }
-  return <div></div>;
+  else {
+  return <div>Loading....</div>;
+  }
 }
 
 export default SpiserietList;

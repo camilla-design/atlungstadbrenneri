@@ -2,6 +2,10 @@
 
 .gallery {
   padding-bottom: 60%;
+
+  @media (min-width: 700px) {
+    padding-bottom: 20%;
+  }
 }
 .image-gallery img {
     width: 100%;
