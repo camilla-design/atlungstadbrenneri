@@ -1,5 +1,7 @@
 import { Component } from "react";
 import CookieConsent from "react-cookie-consent";
+import ScrollAnimation from "react-animate-on-scroll";
+import Button from "react-bootstrap/Button";
 
 import Slider from "../home/slider/Slider";
 import Velkomstekst from "./velkomstekst/Velkomstekst";
@@ -8,7 +10,6 @@ import MenyForside from "./menyer-forside/MenyForside";
 import Nyhetsbrev from "./nyhetsbrev/Nyhetsbrev";
 
 import Footer from "../footer/Footer";
-
 
 class Home extends Component {
   render() {
@@ -38,7 +39,27 @@ class Home extends Component {
         <Slider />
 
         <Velkomstekst />
-        <Åpningstid />
+        <ScrollAnimation animateIn="fadeIn">
+          <div className="container-background opening-hours-contanier p-5">
+            <div className="text-content-opening">
+              <h1 className="mt-5">Åpningstider</h1>
+              <p>
+                Våre åpningstider ligger også på vår Facebook side:{" "}
+                <a href="https://www.facebook.com/atlungstadbrenneri">
+                  Atlungstad Brenneri
+                </a>
+              </p>
+              <Åpningstid />
+              <p className="mt-5">Reserver bord her: </p>
+              <Button
+                variant="primary"
+                href="https://booking.gastroplanner.no/atlungstadbrenneri/t"
+              >
+                Bestill bord
+              </Button>
+            </div>
+          </div>
+        </ScrollAnimation>
         <MenyForside />
         <Nyhetsbrev />
         <Footer />

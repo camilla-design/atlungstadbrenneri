@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
+import Loader from '../../loader/Loader';
 
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -14,28 +15,12 @@ function MenyInnhold() {
   const API = API_URL + "/menyer-forsides";
 
   const [cardInfo, setcardInfo] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    try {
-      axios.get(API).then((response) => {
-        setcardInfo(response.data);
-      });
-    } catch (error) {
-      setError(error.toString());
-    } finally {
-      setLoading(false);
-    }
+    axios.get(API).then((response) => {
+      setcardInfo(response.data);
+    });
   }, [API]);
-
-  if (loading) {
-    return <div>Loading..</div>;
-  }
-
-  if (error) {
-    return <div>An error</div>;
-  }
 
   if (cardInfo) {
     return (
@@ -121,7 +106,7 @@ function MenyInnhold() {
       </>
     );
   }
-  return <div></div>;
+  return <div><Loader /></div>;
 }
 
 export default MenyInnhold;

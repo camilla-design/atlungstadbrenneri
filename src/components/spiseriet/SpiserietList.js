@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_URL } from "../../constants/api/API_URL";
 import { Link } from "react-router-dom";
+import Loader from '../loader/Loader';
 
 import Tab from "react-bootstrap/Tab";
 import Row from "react-bootstrap/Row";
@@ -16,13 +17,13 @@ function SpiserietList() {
   useEffect(() => {
     axios.get(API).then((response) => {
       setInfo(response.data);
-      console.log(response.data);
     });
   }, [API]);
 
   if (info) {
     return (
       <>
+      
       <div className="menu-navigation">
         <Tab.Container id="left-tabs" defaultActiveKey="meny">
           <Row>
@@ -112,7 +113,7 @@ function SpiserietList() {
     );
   }
   else {
-  return <div>Loading....</div>;
+  return <div><Loader /></div>;
   }
 }
 

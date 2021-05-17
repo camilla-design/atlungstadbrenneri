@@ -1,44 +1,25 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
+import Loader from '../../loader/Loader';
 
 import image1 from "../../../images/hero/historie-menn.jpg";
 
 const API = API_URL + "/velkomsteksts";
 
 function Velkomstekst() {
-  const [texts, setText] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [texts, setText] = useState(null);
 
-  const getApi = () => {
-    fetch(API)
-      .then((response) => response.json())
-      .then((json) => {
-        setText(json);
-      });
-  };
+  useEffect(() => {
+    axios.get(API).then((response) => {
+      setText(response.data);
+    });
+  }, [API]);
 
-  useEffect(function () {
-    try {
-      getApi();
-    } catch (error) {
-      setError(error.toString());
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  if (loading) {
-    return <div>Loading..</div>;
-  }
-
-  if (error) {
-    return <div>An error</div>;
-  }
-
-  return (
+  if(texts) {
+    return (
     <div>
       <ScrollAnimation animateIn="fadeIn">
         {texts.map((text) => (
@@ -60,6 +41,10 @@ function Velkomstekst() {
       </ScrollAnimation>
     </div>
   );
+}
+else {
+  return <div><Loader /></div>
+}
 }
 
 export default Velkomstekst;
