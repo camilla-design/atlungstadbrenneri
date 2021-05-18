@@ -1,38 +1,20 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
+import Loader from '../../loader/Loader';
 import { API_URL } from "../../../constants/api/API_URL";
 
 const API = API_URL + "/motepakkers";
 
 function Møtepakker() {
-  const [textInfo, setTextInfo] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [textInfo, setText] = useState(null);
 
-  const getApi = () => {
-    fetch(API)
-      .then((response) => response.json())
-      .then((json) => {
-        setTextInfo(json);
-      });
-  };
+  useEffect(() => {
+    axios.get(API).then((response) => {
+      setText(response.data);
+    });
+  }, [API]);
 
-  useEffect(function () {
-    try {
-      getApi();
-    } catch (error) {
-      setError(error.toString());
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  if (loading) {
-    return <div>Loading..</div>;
-  }
-
-  if (error) {
-    return <div>An error</div>;
-  }
+  if(textInfo) {
 
   return (
     <div>
@@ -50,6 +32,10 @@ function Møtepakker() {
       ))}
     </div>
   );
+  }
+  else {
+    return <div className="loader-container"><Loader /></div>
+  }
 }
 
 export default Møtepakker;

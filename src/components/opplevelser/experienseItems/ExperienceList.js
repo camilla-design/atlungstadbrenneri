@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
 import { Link } from "react-router-dom";
+import Loader from '../../loader/Loader';
 
 import Tab from "react-bootstrap/Tab";
 import Row from "react-bootstrap/Row";
@@ -78,7 +79,7 @@ function ExperienceList() {
       </>
     );
   }
-  return <div></div>;
+  return <div className="loader-container"><Loader /></div>;
 }
 
 export default ExperienceList;

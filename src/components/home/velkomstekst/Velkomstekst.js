@@ -43,7 +43,7 @@ function Velkomstekst() {
   );
 }
 else {
-  return <div><Loader /></div>
+  return <div className="loader-container"><Loader /></div>
 }
 }
 

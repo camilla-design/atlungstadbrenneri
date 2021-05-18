@@ -106,7 +106,7 @@ function MenyInnhold() {
       </>
     );
   }
-  return <div><Loader /></div>;
+  return <div className="loader-container"><Loader /></div>;
 }
 
 export default MenyInnhold;

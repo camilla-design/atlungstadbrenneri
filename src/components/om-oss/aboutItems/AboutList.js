@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
+import Loader from '../../loader/Loader';
 
 import Ansatte from "./Ansatte";
 import KontaktOss from "./KontaktOss";
@@ -131,7 +132,7 @@ function AboutList() {
       </>
     );
   }
-  return <div></div>;
+  return <div className="loader-container"><Loader /></div>;
 }
 
 export default AboutList;
