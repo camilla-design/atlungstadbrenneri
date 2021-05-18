@@ -9,7 +9,7 @@ class AboutUs extends Component {
     return (
       <>
         <div className="hero-container">
-          <img className="d-block w-100 h-100" alt="hero" src={image2} />
+          <img className="d-block w-100 h-100" alt="hero" src={image2} title="credit: Atlungstad Brenneri" />
         </div>
         <div className="category-container mt-4 p-3">
           <h1> - Om Oss -</h1>

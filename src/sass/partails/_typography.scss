@@ -113,8 +113,13 @@ hr {
   // ansatte
 
   .staff-card {
-    
+    @media (min-width: 600px) {
+        display: flex;
+        width: 300px;
+    }
+   
   .staff-information {
+      margin: 0 auto;
       p {
           color: #343A40!important;
 
@@ -126,10 +131,24 @@ hr {
           text-align: left;
       }
     }
-
-    @media (min-width: 600px) {
-        display: flex;
-        width: 200px;
-    }
+    
       
+  }
+
+  .contact-card {
+    p {
+        color: #343A40!important;
+
+        a {
+          color: #343A40!important;
+      }
+    }
+    @media (min-width: 1000px) {
+        width: 900px;
+    }
+
+    @media (min-width: 1000px) {
+        display: flex;
+        width: 800px;
+    }
   }

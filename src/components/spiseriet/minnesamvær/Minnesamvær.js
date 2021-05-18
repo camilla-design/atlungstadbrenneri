@@ -10,7 +10,7 @@ function Minnesamvær() {
   return (
     <>
         <div className="hero-container">
-          <img className="d-block w-100" alt="hero" src={image1} />
+          <img className="d-block w-100" alt="hero" src={image1} title="credit: Atlungstad Brenneri" />
         </div>
         <div class="back-button mt-3 p-3">
           <Link to="/spiseriet">
@@ -18,7 +18,7 @@ function Minnesamvær() {
           </Link>
         </div>
 
-        <div className="container">
+        <div className="container lab">
           <MemorialList />
           <div className="container">
             <MemorialGallery />

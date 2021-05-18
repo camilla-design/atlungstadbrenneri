@@ -67,6 +67,7 @@ function SpiserietList() {
                     <p>{info[1].description}</p>
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       href="https://ecom.susoft.com/atlungstadtakeaway/products/?fbclid=IwAR0tyhdG3aTuqSPrLdqBouHTs2OQJTS98MtA2W3dWsR_BcWHuRTs-1P7lyU"
                     >
                       Les mer

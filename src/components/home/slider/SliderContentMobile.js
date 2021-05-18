@@ -13,6 +13,7 @@ const SliderContentMobile = () => {
           className="w-100 h-100"
           src={atlungstadImage}
           alt="Atlungstad Brenneri factory"
+          title="credit: Atlungstad Brenneri"
         />
       </Carousel.Item>
       <Carousel.Item interval={2000}>
@@ -20,6 +21,7 @@ const SliderContentMobile = () => {
           className="w-100 h-100"
           src={spiserietImage}
           alt="Spiseriet guests"
+          title="credit: Atlungstad Brenneri"
         />
       </Carousel.Item>
       <Carousel.Item interval={2000}>
@@ -27,6 +29,7 @@ const SliderContentMobile = () => {
           className="w-100 h-100"
           src={uteserveringImage}
           alt="Outside earea"
+          title="credit: Atlungstad Brenneri"
         />
       </Carousel.Item>
     </Carousel>

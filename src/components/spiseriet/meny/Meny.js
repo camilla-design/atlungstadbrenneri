@@ -9,7 +9,6 @@ import Tab from "react-bootstrap/Tab";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -19,7 +18,7 @@ function Meny() {
   return (
     <>
       <div className="hero-container">
-        <img className="d-block w-100" alt="hero" src={image1} />
+        <img className="d-block w-100" alt="hero" src={image1} title="credit: Atlungstad Brenneri" />
       </div>
       <div class="back-button mt-2 p-3">
         <a href="/spiseriet">

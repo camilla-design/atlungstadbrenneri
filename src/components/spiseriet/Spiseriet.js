@@ -12,7 +12,7 @@ class Spiseriet extends Component {
       <>
         <ScrollAnimation animateIn="fadeIn">
           <div class="hero-container">
-            <img className="d-block w-100 h-100" alt="hero" src={image2} />
+            <img className="d-block w-100 h-100" alt="hero" src={image2} title="credit: Atlungstad Brenneri" />
           </div>
           <div className="category-container p-3 pt-5">
             <h1> - Spiseriet -</h1>

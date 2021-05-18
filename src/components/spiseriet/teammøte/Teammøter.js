@@ -8,7 +8,7 @@ function Teammøte() {
   return (
     <>
       <div className="hero-container">
-        <img className="d-block w-100" alt="hero" src={image1} />
+        <img className="d-block w-100" alt="hero" src={image1} title="credit: Atlungstad Brenneri" />
       </div>
       <div class="back-button mt-3 p-3">
         <Link to="/spiseriet">
@@ -16,13 +16,14 @@ function Teammøte() {
         </Link>
       </div>
 
-      <div className="container">
+      <div className="container lab">
         <TeamMeetingList />
         <p>
           Les mer om{" "}
           <a
             target="_blank"
             href="https://stangevestbygd.no/firmaer/sondre-elton-gard/"
+            rel="noreferrer"
           >
             Søndre Elton Gård
           </a>

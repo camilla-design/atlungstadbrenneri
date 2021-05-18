@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { API_URL } from "../../../constants/api/API_URL";
-import Loader from '../../loader/Loader';
+import Loader from "../../loader/Loader";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -30,14 +30,18 @@ function MenyInnhold() {
             <ScrollAnimation animateIn="fadeIn">
               <Col>
                 <Card>
-                  <Card.Img variant="top" src={`${cardInfo[0].image[0].url}`} />
+                  <Card.Img
+                    variant="top"
+                    src={`${cardInfo[0].image[0].url}`}
+                    alt="credit: Atlungstad Brenneri"
+                  />
                   <Card.Body>
                     <Card.Title className="card-title">
                       {cardInfo[0].title}
                     </Card.Title>
                     <Card.Text>{cardInfo[0].description}</Card.Text>
                     <Button variant="dark">
-                    <Link to="/spiseriet">Spiseriet</Link>
+                      <Link to="/spiseriet">Spiseriet</Link>
                     </Button>
                   </Card.Body>
                 </Card>
@@ -46,7 +50,11 @@ function MenyInnhold() {
             <ScrollAnimation animateIn="fadeIn">
               <Col>
                 <Card>
-                  <Card.Img variant="top" src={`${cardInfo[1].image[0].url}`} />
+                  <Card.Img
+                    variant="top"
+                    src={`${cardInfo[1].image[0].url}`}
+                    alt="credit: Atlungstad Brenneri"
+                  />
                   <Card.Body>
                     <Card.Title className="card-title">
                       {cardInfo[1].title}
@@ -56,6 +64,7 @@ function MenyInnhold() {
                       <a
                         target="_blank"
                         href="https://ecom.susoft.com/atlungstadtakeaway/home"
+                        rel="noreferrer"
                       >
                         Take Away
                       </a>
@@ -67,14 +76,18 @@ function MenyInnhold() {
             <ScrollAnimation animateIn="fadeIn">
               <Col>
                 <Card>
-                  <Card.Img variant="top" src={`${cardInfo[2].image[0].url}`} />
+                  <Card.Img
+                    variant="top"
+                    src={`${cardInfo[2].image[0].url}`}
+                    alt="credit: Atlungstad Brenneri"
+                  />
                   <Card.Body>
                     <Card.Title className="card-title">
                       {cardInfo[2].title}
                     </Card.Title>
                     <Card.Text>{cardInfo[1].description}</Card.Text>
                     <Button variant="dark">
-                    <Link to="/opplevelser">Opplevelser</Link>
+                      <Link to="/opplevelser">Opplevelser</Link>
                     </Button>
                   </Card.Body>
                 </Card>
@@ -83,7 +96,11 @@ function MenyInnhold() {
             <ScrollAnimation animateIn="fadeIn">
               <Col>
                 <Card>
-                  <Card.Img variant="top" src={`${cardInfo[3].image[0].url}`} />
+                  <Card.Img
+                    variant="top"
+                    src={`${cardInfo[3].image[0].url}`}
+                    alt="credit: Atlungstad Brenneri"
+                  />
                   <Card.Body>
                     <Card.Title className="card-title">
                       {cardInfo[3].title}
@@ -93,6 +110,7 @@ function MenyInnhold() {
                       <a
                         target="_blank"
                         href="https://ecom.susoft.com/atlungstadbutikk/home"
+                        rel="noreferrer"
                       >
                         Nettbutikk
                       </a>
@@ -106,7 +124,11 @@ function MenyInnhold() {
       </>
     );
   }
-  return <div className="loader-container"><Loader /></div>;
+  return (
+    <div className="loader-container">
+      <Loader />
+    </div>
+  );
 }
 
 export default MenyInnhold;

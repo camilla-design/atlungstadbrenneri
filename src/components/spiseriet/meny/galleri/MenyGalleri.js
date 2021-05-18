@@ -11,29 +11,29 @@ class MenyGalleri extends Component {
 
 <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={meny1}>
-              <img src={meny1} width="600" alt="Meny 1" />
+            <a target="_blank" rel="noreferrer" href={meny1}>
+              <img src={meny1} width="600" alt="Meny 1" title="credit: Atlungstad Brenneri" />
             </a>
           </div>
         </div>
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={meny2}>
-              <img src={meny2} width="600" alt="Meny 2" />
+            <a target="_blank" rel="noreferrer" href={meny2}>
+              <img src={meny2} width="600" alt="Meny 2" title="credit: Atlungstad Brenneri" />
             </a>
           </div>
         </div>
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={meny3}>
-              <img src={meny3} width="600" alt="Meny 3" />
+            <a target="_blank" rel="noreferrer" href={meny3}>
+              <img src={meny3} width="600" alt="Meny 3" title="credit: Atlungstad Brenneri" />
             </a>
           </div>
         </div>
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={meny4}>
-              <img src={meny4} width="600" alt="Meny 4" />
+            <a target="_blank" rel="noreferrer" href={meny4}>
+              <img src={meny4} width="600" alt="Meny 4" title="credit: Atlungstad Brenneri" />
             </a>
           </div>
         </div>

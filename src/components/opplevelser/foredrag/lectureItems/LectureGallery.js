@@ -39,8 +39,8 @@ function LectureGallery() {
       {imaga.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={`${gallery.image[0].url}`}>
-              <img src={`${gallery.image[0].url}`} width="600" />
+            <a target="_blank" rel="noreferrer" href={`${gallery.image[0].url}`}>
+              <img src={`${gallery.image[0].url}`} width="600" alt="foredrag" title="credit: Atlungstad Brenneri" />
             </a>
           </div>
         </div>
@@ -48,8 +48,8 @@ function LectureGallery() {
       {imaga.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={`${gallery.image[1].url}`}>
-              <img src={`${gallery.image[1].url}`} width="600" />
+            <a target="_blank" rel="noreferrer" href={`${gallery.image[1].url}`}>
+              <img src={`${gallery.image[1].url}`} width="600" alt="foredrag" title="credit: Atlungstad Brenneri" />
             </a>
           </div>
         </div>
@@ -57,8 +57,8 @@ function LectureGallery() {
       {imaga.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={`${gallery.image[2].url}`}>
-              <img src={`${gallery.image[2].url}`} width="600" />
+            <a target="_blank" rel="noreferrer" href={`${gallery.image[2].url}`}>
+              <img src={`${gallery.image[2].url}`} alt="foredrag" width="600" title="credit: Atlungstad Brenneri" />
             </a>
           </div>
         </div>
@@ -66,8 +66,8 @@ function LectureGallery() {
       {imaga.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={`${gallery.image[3].url}`}>
-              <img src={`${gallery.image[3].url}`} width="600" />
+            <a target="_blank" rel="noreferrer" href={`${gallery.image[3].url}`}>
+              <img src={`${gallery.image[3].url}`} width="600" alt="foredrag" title="credit: Atlungstad Brenneri" />
             </a>
           </div>
         </div>

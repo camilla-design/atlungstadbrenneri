@@ -9,6 +9,8 @@ import Åpningstid from "./åpningstid/Åpningstid";
 import MenyForside from "./menyer-forside/MenyForside";
 import Nyhetsbrev from "./nyhetsbrev/Nyhetsbrev";
 
+import policy from "../../policy/policy.pdf";
+
 import Footer from "../footer/Footer";
 
 class Home extends Component {
@@ -34,30 +36,27 @@ class Home extends Component {
             nettsideopplevelse. For mer informasjon om cookien bruker vi
             innstillingene.
           </h6>
-          <a href="">Les om våre policy her</a>
+          <a href={policy}>Les om våre policy her</a>
         </CookieConsent>
         <Slider />
-
         <Velkomstekst />
         <ScrollAnimation animateIn="fadeIn">
-          <div className="container-background opening-hours-contanier p-5">
-            <div className="text-content-opening">
-              <h1 className="mt-5">Åpningstider</h1>
-              <p>
-                Våre åpningstider ligger også på vår Facebook side:{" "}
-                <a href="https://www.facebook.com/atlungstadbrenneri">
-                  Atlungstad Brenneri
-                </a>
-              </p>
-              <Åpningstid />
-              <p className="mt-5">Reserver bord her: </p>
-              <Button
-                variant="primary"
-                href="https://booking.gastroplanner.no/atlungstadbrenneri/t"
-              >
-                Bestill bord
-              </Button>
-            </div>
+          <div className="container-background">
+            <h1 className="mt-5">Åpningstider</h1>
+            <p>
+              Våre åpningstider ligger også på vår Facebook side:{" "}
+              <a href="https://www.facebook.com/atlungstadbrenneri">
+                Atlungstad Brenneri
+              </a>
+            </p>
+            <Åpningstid />
+            <p className="mt-5">Reserver bord her: </p>
+            <Button
+              variant="primary"
+              href="https://booking.gastroplanner.no/atlungstadbrenneri/t"
+            >
+              Bestill bord
+            </Button>
           </div>
         </ScrollAnimation>
         <MenyForside />

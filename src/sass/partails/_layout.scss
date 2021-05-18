@@ -11,15 +11,13 @@ body {
 
 .container {
     position: relative;
-    
-    width: 340px;
-    padding-top: 50px;
+    display: flex;
+    padding-top: 64px;
     margin: 0 auto;
-    vertical-align: middle;
-    padding-bottom: 50px;
+    padding-bottom: 64px;
 
     @media (min-width: 600px) {
-        width: 690px;
+        width: 600px;
     }
     
 
@@ -28,23 +26,29 @@ body {
 .container-background {
     position: relative;
     width: 100%;
-    padding: 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     margin: 0 auto;
-    vertical-align: middle;
+    background: $color-primary;
+    color: $color-background;
+    text-align: center;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    width: 300px;
 
     @media (min-width: 600px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    width: 600px;
 }
 }
+
 
 
 .fadeIn {
@@ -53,6 +57,7 @@ body {
 
 .nyhetsbrev {
     text-align: center;
+    flex-direction: column;
     
     #mc-embedded-subscribe {
         margin: 0 auto;
@@ -107,15 +112,46 @@ body {
 
 }
 
+.facebook-news {
+    @media (min-width: 600px) {
+        width: 400px;
+        margin: 0 auto;
+    }
+   
+}
+@media (min-width: 1000px) {
+    
+    .facebook-body {
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+ }
+
+
+
+.staff-map {
+    iframe {
+        @media (min-width: 1000px) {
+            width: 800px;
+            margin-bottom: 8%;
+        }
+    }
+}
 
 
 
 
+.lab {
+    display: block;
+    text-align: center;
+    
 
-
-
-
-
+    .btn {
+        margin: 0 auto !important;
+    }
+}
 
 
 

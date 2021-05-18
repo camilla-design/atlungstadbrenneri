@@ -11,7 +11,6 @@ const Nyhetsbrev = () => {
           className="mt-5"
           action="https://atlungstadspiseri.us1.list-manage.com/subscribe/post?u=405781cf28cd069d65bf28399&amp;id=47228a8704"
           method="post"
-          method="post"
           id="mc-embedded-subscribe-form"
         >
           <Form.Group controlId="formBasicEmail">

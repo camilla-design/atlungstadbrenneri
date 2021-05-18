@@ -39,11 +39,12 @@ function MemorialGallery() {
       {imaga.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={`${gallery.image[0].url}`}>
+            <a target="_blank" rel="noreferrer" href={`${gallery.image[0].url}`}>
               <img
                 src={`${gallery.image[0].url}`}
                 width="600"
                 alt="minnseamvær"
+                title="credit: Atlungstad Brenneri"
               />
             </a>
           </div>
@@ -52,11 +53,12 @@ function MemorialGallery() {
       {imaga.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
-            <a target="_blank" href={`${gallery.image[1].url}`}>
+            <a target="_blank" rel="noreferrer" href={`${gallery.image[1].url}`}>
               <img
                 src={`${gallery.image[1].url}`}
                 width="600"
                 alt="minnseamvær"
+                title="credit: Atlungstad Brenneri"
               />
             </a>
           </div>

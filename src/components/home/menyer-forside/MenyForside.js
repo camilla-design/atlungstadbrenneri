@@ -2,7 +2,7 @@ import MenyInnhold from "./MenyInnhold";
 
 function MenyForside() {
   return (
-    <div className="container mt-4">
+    <div className="container-card mt-4">
       <div className="card-header-content">
         <h1>Atlungstad Brenneri menyer</h1>
         <div className="mt-2">

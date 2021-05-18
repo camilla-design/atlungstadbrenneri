@@ -13,14 +13,14 @@ function Omvisning() {
     <>
       <ScrollAnimation animateIn="fadeIn">
         <div className="hero-container">
-          <img className="d-block w-100" alt="hero" src={image1} />
+          <img className="d-block w-100" alt="hero" src={image1} title="credit: Atlungstad Brenneri" />
         </div>
         <div class="back-button mt-3 p-3">
           <Link to="/opplevelser">
             <i class="far fa-arrow-alt-circle-left"></i> Tilbake
           </Link>
         </div>
-        <div className="container">
+        <div className="container lab">
           <TourList />
           <Button className="order-button" variant="primary">
             <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
