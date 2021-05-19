@@ -14,6 +14,10 @@ Open [https://docs.google.com/document/d/1xQLqwaLcr_JLOKtUhxQe5BFouygVhUYF5fd9V4
 
 Open [https://docs.google.com/document/d/1K8ZRtSfn-sLiKtsNPzsFGyToz-1Q45CuYXdGLj-Q2yo/edit?usp=sharing]
 
+## Style Guide
+
+Open [https://www.figma.com/file/YhUuzYEB59hynJsA0ix12e/Style-guide-Atlungstad-Brenneri?node-id=0%3A1]
+
 ## Prototype
 
 [https://docs.google.com/document/d/1s5JMZL5-9ucZPcViEq4mTMOlMGT9m_T9nng1gubI3Uc/edit?usp=sharing]
