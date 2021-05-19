@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Atlungstad Brenneri
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Atlungstad Distillery is a unique cultural monument where you will experience Norwegian industrial architecture, distillery history and Norwegian aquavit production for the last 150 years. Here you can follow the process from the potato entering the building and until the aquavit are bottled. Welcome to authentic surroundings and create memorable experiences!
 
-## Available Scripts
+## Brief
 
-In the project directory, you can run:
+Open [https://docs.google.com/document/d/1yjRQydJcq-PjSRp1HnZP1HohmMGkYHrxDuuibQZMGqk/edit?usp=sharing]
 
 ### `npm start`
 
