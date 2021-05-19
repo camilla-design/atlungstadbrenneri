@@ -18,7 +18,7 @@ function ExperienceList() {
     axios.get(API).then((response) => {
       setInfo(response.data);
     });
-  }, [API]);
+  }, []);
 
   if (info) {
     return (

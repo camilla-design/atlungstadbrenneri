@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_URL } from "../../../../constants/api/API_URL";
+import Loader from "../../../loader/Loader";
+
+const API = API_URL + "/minnesamvaers";
 
 function MemorialList() {
-  const API = API_URL + "/minnesamvaers";
   const [textInfo, setTextInfo] = useState(null);
 
   useEffect(() => {
@@ -11,7 +13,7 @@ function MemorialList() {
       setTextInfo(response.data);
       console.log(setTextInfo);
     });
-  }, [API]);
+  }, []);
 
   if (textInfo) {
     return (
@@ -24,8 +26,13 @@ function MemorialList() {
         </div>
       </div>
     );
+  } else {
+    return (
+      <div className="loader-container">
+        <Loader />
+      </div>
+    );
   }
-  return <div></div>;
 }
 
 export default MemorialList;

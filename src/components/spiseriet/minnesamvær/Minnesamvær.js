@@ -5,12 +5,19 @@ import Footer from "../../footer/Footer";
 import { Link } from "react-router-dom";
 
 import image1 from "../../../images/hero/minnestund.jpg";
+import { Component } from "react";
 
-function Minnesamvær() {
-  return (
-    <>
+class Minnesamvær extends Component {
+  render() {
+    return (
+      <>
         <div className="hero-container">
-          <img className="d-block w-100" alt="hero" src={image1} title="credit: Atlungstad Brenneri" />
+          <img
+            className="d-block w-100"
+            alt="hero"
+            src={image1}
+            title="credit: Atlungstad Brenneri"
+          />
         </div>
         <div class="back-button mt-3 p-3">
           <Link to="/spiseriet">
@@ -24,9 +31,10 @@ function Minnesamvær() {
             <MemorialGallery />
           </div>
         </div>
-      <Footer />
-    </>
-  );
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default Minnesamvær;
