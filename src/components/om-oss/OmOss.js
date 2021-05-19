@@ -4,7 +4,7 @@ import Footer from "../footer/Footer";
 
 import image2 from "../../images/hero/om-oss.jpg";
 
-class AboutUs extends Component {
+class OmOss extends Component {
   render() {
     return (
       <>
@@ -24,4 +24,4 @@ class AboutUs extends Component {
   }
 }
 
-export default AboutUs;
+export default OmOss;

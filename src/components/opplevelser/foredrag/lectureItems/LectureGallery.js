@@ -1,42 +1,24 @@
 import { useEffect, useState } from "react";
 import { API_URL } from "../../../../constants/api/API_URL";
+import axios from "axios";
+import Loader from "../../../loader/Loader";
+
 
 const API = API_URL + "/foredrags";
 
 function LectureGallery() {
-  const [imaga, setImage] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [image, setImage] = useState(null);
 
-  const getApi = () => {
-    fetch(API)
-      .then((response) => response.json())
-      .then((json) => {
-        setImage(json);
-      });
-  };
-
-  useEffect(function () {
-    try {
-      getApi();
-    } catch (error) {
-      setError(error.toString());
-    } finally {
-      setLoading(false);
-    }
+  useEffect(() => {
+    axios.get(API).then((response) => {
+      setImage(response.data);
+    });
   }, []);
 
-  if (loading) {
-    return <div>Loading..</div>;
-  }
-
-  if (error) {
-    return <div>An error</div>;
-  }
-
+  if (image) {
   return (
     <div className="gallery">
-      {imaga.map((gallery) => (
+      {image.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
             <a target="_blank" rel="noreferrer" href={`${gallery.image[0].url}`}>
@@ -45,7 +27,7 @@ function LectureGallery() {
           </div>
         </div>
       ))}
-      {imaga.map((gallery) => (
+      {image.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
             <a target="_blank" rel="noreferrer" href={`${gallery.image[1].url}`}>
@@ -54,7 +36,7 @@ function LectureGallery() {
           </div>
         </div>
       ))}
-      {imaga.map((gallery) => (
+      {image.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
             <a target="_blank" rel="noreferrer" href={`${gallery.image[2].url}`}>
@@ -63,7 +45,7 @@ function LectureGallery() {
           </div>
         </div>
       ))}
-      {imaga.map((gallery) => (
+      {image.map((gallery) => (
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
             <a target="_blank" rel="noreferrer" href={`${gallery.image[3].url}`}>
@@ -73,7 +55,14 @@ function LectureGallery() {
         </div>
       ))}
     </div>
-  );
+  );}
+  else {
+    return (
+      <div className="loader-container">
+        <Loader />
+      </div>
+    );
+  }
 }
 
 export default LectureGallery;
