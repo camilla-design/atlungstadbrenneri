@@ -12,7 +12,7 @@ import Nav from "react-bootstrap/Nav";
 const API = API_URL + "/spiseriets";
 
 function SpiserietList() {
-  const [info, setInfo] = useState([]);
+  const [info, setInfo] = useState(null);
 
   useEffect(() => {
     axios.get(API).then((response) => {

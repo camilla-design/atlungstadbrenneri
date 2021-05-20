@@ -1,5 +1,5 @@
-import WeddingList from "./weddingItems/WeddingList";
-import WeddingGallery from "./weddingItems/WeddigGallery";
+import WeddingList from "./item/WeddingList";
+import WeddingGallery from "./item/WeddigGallery";
 import Footer from "../../footer/Footer";
 
 import { Link } from "react-router-dom";

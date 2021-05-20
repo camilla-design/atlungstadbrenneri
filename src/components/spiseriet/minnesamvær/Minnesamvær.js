@@ -1,5 +1,5 @@
-import MemorialList from "./memorialItems/MemorialList";
-import MemorialGallery from "./memorialItems/MemorialGallery";
+import MemorialList from "./item/MemorialList";
+import MemorialGallery from "./item/MemorialGallery";
 import Footer from "../../footer/Footer";
 
 import { Link } from "react-router-dom";
