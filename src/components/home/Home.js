@@ -42,6 +42,7 @@ class Home extends Component {
         <Velkomstekst />
         <ScrollAnimation animateIn="fadeIn">
           <div className="container-background">
+            <div class="text-container">
             <h1 className="mt-5">Åpningstider</h1>
             <p>
               Våre åpningstider ligger også på vår Facebook side:{" "}
@@ -49,6 +50,7 @@ class Home extends Component {
                 Atlungstad Brenneri
               </a>
             </p>
+            </div>
             <Åpningstid />
             <p className="mt-5">Reserver bord her: </p>
             <Button

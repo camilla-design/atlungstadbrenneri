@@ -26,7 +26,7 @@ class Bryllup extends Component {
         </div>
         <div className="container lab">
           <WeddingList />
-          <div className="container mb-5">
+          <div className="container">
             <WeddingGallery />
           </div>
         </div>
