@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { API_URL } from "../../../../constants/api/API_URL";
 import axios from "axios";
-import { Carousel } from "react-bootstrap";
 import Loader from "../../../loader/Loader";
 
 const API = API_URL + "/minnesamvaers";
@@ -19,25 +18,41 @@ function MemorialGallery() {
     return (
       <div className="gallery">
         {image.map((gallery) => (
-           <Carousel fade={true} pause={false}>
-           <Carousel.Item interval={2000}>
-           <img
-             className="w-100 h-100"
-             src={`${gallery.image[0].url}`}
-             alt="minnesamvær"
-           />
-           </Carousel.Item>
-           <Carousel.Item interval={2000}>
-           <img
-             className="w-100 h-100"
-             src={`${gallery.image[1].url}`}
-             alt="minnesamvær"
-           />
-           </Carousel.Item>
-           
-           </Carousel>
+          <div className="mb-4 mt-4 image-gallery">
+            <div className="responsive-gallery">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={`${gallery.image[0].url}`}
+              >
+                <img
+                  src={`${gallery.image[0].url}`}
+                  width="600"
+                  alt="minnseamvær"
+                  title="credit: Atlungstad Brenneri"
+                />
+              </a>
+            </div>
+          </div>
         ))}
-        
+        {image.map((gallery) => (
+          <div className="mb-4 mt-4 image-gallery">
+            <div className="responsive-gallery">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={`${gallery.image[1].url}`}
+              >
+                <img
+                  src={`${gallery.image[1].url}`}
+                  width="600"
+                  alt="minnseamvær"
+                  title="credit: Atlungstad Brenneri"
+                />
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     );
   } else {
