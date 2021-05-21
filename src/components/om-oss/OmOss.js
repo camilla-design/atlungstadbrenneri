@@ -1,5 +1,5 @@
 import { Component } from "react";
-import AboutList from "./aboutItems/AboutList";
+import AboutList from "./item/AboutList";
 import Footer from "../footer/Footer";
 
 import image2 from "../../images/hero/om-oss.jpg";

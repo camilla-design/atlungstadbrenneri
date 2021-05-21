@@ -1,5 +1,5 @@
-import LabList from "./labList/LabList";
-import LabGallery from "./labList/LabGallery";
+import LabList from "./item/LabList";
+import LabGallery from "./item/LabGallery";
 import Footer from "../../footer/Footer";
 
 import { Link } from "react-router-dom";

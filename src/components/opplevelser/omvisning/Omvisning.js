@@ -1,5 +1,5 @@
-import TourList from "./tourItems/TourList";
-import TourGallery from "./tourItems/TourGallery";
+import TourList from "./item/TourList";
+import TourGallery from "./item/TourGallery";
 import Footer from "../../footer/Footer";
 
 import { Link } from "react-router-dom";

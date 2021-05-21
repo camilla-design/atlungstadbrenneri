@@ -1,5 +1,5 @@
-import LectureList from "./lectureItems/LectureList";
-import LectureGallery from "./lectureItems/LectureGallery";
+import LectureList from "./item/LectureList";
+import LectureGallery from "./item/LectureGallery";
 
 import { Link } from "react-router-dom";
 import Footer from "../../footer/Footer";
