@@ -1,4 +1,4 @@
-import TeamMeetingList from "./teamMeetingItem/TeamMeetingList";
+import TeamMeetingList from "./item/TeamMeetingList";
 import Footer from "../../footer/Footer";
 
 import { Link } from "react-router-dom";
