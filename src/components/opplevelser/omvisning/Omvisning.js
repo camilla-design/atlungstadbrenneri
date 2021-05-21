@@ -32,8 +32,9 @@ class Omvisning extends Component {
             <Button className="order-button" variant="primary">
               <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
             </Button>
-
+            <div class="container">
             <TourGallery />
+            </div>
           </div>
         </ScrollAnimation>
         <Footer />
