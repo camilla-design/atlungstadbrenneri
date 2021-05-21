@@ -35,7 +35,7 @@ class Teammøte extends Component {
               Søndre Elton Gård
             </a>
           </p>
-          <div class="order-button mt-3">
+          <div class="order-button mt-3 mb-3">
             <a href="mailto:post@atlungstadbrenneri.no">Bestill her</a>
           </div>
         </div>
