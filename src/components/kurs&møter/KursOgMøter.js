@@ -1,5 +1,5 @@
 import { Component } from "react";
-import CourseList from "./courseList/CourseList";
+import CourseList from "./item/CourseList";
 import Footer from "../footer/Footer";
 
 import ScrollAnimation from "react-animate-on-scroll";
