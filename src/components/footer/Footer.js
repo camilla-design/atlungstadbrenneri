@@ -51,7 +51,7 @@ class Footer extends Component {
             <div className="sponsore-links">
               <h5>Linker</h5>
               <p>
-                <a href="dehistoriske.no">
+                <a href="https://www.dehistoriske.no/">
                   De historiske Hoteller og spisesteder
                 </a>
               </p>
