@@ -42,7 +42,7 @@ function Layout() {
           </NavLink>
           <ul class={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-            <NavLink
+              <NavLink
                 to="/spiseriet"
                 activeClassName="active"
                 exact
