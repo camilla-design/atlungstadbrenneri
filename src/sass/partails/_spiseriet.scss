@@ -1,16 +1,16 @@
 /// spiseriet
 .category-container {
-    position: relative;
+  position: relative;
+  text-align: center;
+  h1 {
+    text-transform: uppercase;
     text-align: center;
-    h1 {
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: bold !important;
-    }
-
-    h3 {
-        text-align: center;
-        font-family:'Libre Baskerville', serif !important;
     font-weight: bold !important;
-    }
+  }
+
+  h3 {
+    text-align: center;
+    font-family: $font-heading;
+    font-weight: bold !important;
+  }
 }

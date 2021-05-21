@@ -1,36 +1,31 @@
 .opening-hours-contanier {
-    background: $color-primary;
-    margin: 0 auto;
-    color: $color-background;
-    text-align: center;
-    text-transform: uppercase;
-
-
-    
-
-    
+  background: $color-primary;
+  margin: 0 auto;
+  color: $color-background;
+  text-align: center;
+  text-transform: uppercase;
 }
 .text-container {
-    width: 300px;
-    margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 .text-content-opening {
-    width: 300px;
+  width: 300px;
+  margin: 0 auto;
+  @media (min-width: 600px) {
+    width: 400px;
     margin: 0 auto;
-    @media (min-width: 600px) {
-        width: 400px;
-        margin: 0 auto;
-    }
+  }
 }
 .flex-container-small {
-    margin-top: 24px;
-    width: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 24px;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 
-    @media (min-width: 600px) {
-        width: 400px;
-        margin: 0 auto;
-    }
+  @media (min-width: 600px) {
+    width: 400px;
+    margin: 0 auto;
+  }
 }

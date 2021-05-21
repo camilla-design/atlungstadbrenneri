@@ -1,41 +1,29 @@
 /// menu.js
 
-
 .menu-navigation {
-    text-align: center;
+  text-align: center;
 
+  a {
+    color: $color-background;
+  }
+
+  .nav-item {
     a {
-        color: #F2F2F0 !important;
+      color: #83837f !important;
     }
+  }
+  .nav-link:hover {
+    background-color: $order-button-color;
+    color: $color-background;
+  }
 
-    .nav-item {
-        a {
-            
-            color: #83837f!important;
-    
-        }
-    }
+  .nav-link.active {
+    color: $color-background;
+    background-color: $color-primary;
+
     .nav-link:hover {
-        background-color: #007bff !important;
-        color:  #F2F2F0 !important;
+      background-color: $order-button-color;
+      color: $color-background;
     }
-    
-    .nav-link.active {
-    
-        color:  #F2F2F0 !important;
-        background-color:#343A40!important;
-
-        .nav-link:hover {
-            background-color: #007bff !important;
-            color:  #F2F2F0 !important;
-        }
-        
-    
-    }
-    
-
-    
+  }
 }
-
-
-

@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  display: flex;
+  padding-top: 64px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+  @media (min-width: 600px) {
+    width: 600px;
+  }
+}
+
+.container-background {
+  position: relative;
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin: 0 auto;
+  background: $color-primary;
+  color: $color-background;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 300px;
+
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 600px;
+  }
+}
+
+.lab {
+    display: block;
+    text-align: center;
+  
+    .btn {
+      margin: 0 auto !important;
+    }
+  }
+  

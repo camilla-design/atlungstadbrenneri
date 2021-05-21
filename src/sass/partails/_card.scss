@@ -1,53 +1,54 @@
 //// TYPOGARPHY   ////
+
 .card-title {
-    font-family:'Libre Baskerville', serif !important;
-    font-weight: bold !important;
+  font-family: $font-heading;
+  font-weight: bold !important;
 }
 
 .card-container {
-    a {
-        color:  #F2F2F0 !important;
-    }
+  a {
+    color: $color-background;
+  }
 }
 
 .card-body {
-    a {
-        background-color:#343A40!important;
-        padding: 10px;
-        color: #F2F2F0 !important;
-    }
+  a {
+    background-color: $color-primary;
+    padding: 10px;
+    color: $color-background;
+  }
 }
 
 /// CARD BODY ///
 
-.card-background, .card-header {
-    background-color:#343A40!important;
-    text-align: center;
-    border: none !important;
+.card-background,
+.card-header {
+  background-color: $color-primary;
+  text-align: center;
+  border: none !important;
 
-    h2 {
-        text-align: center !important;
-    }
-
+  h2 {
+    text-align: center !important;
+  }
 }
 
 .tab-content {
-    margin-top: 30px !important;
-    @media (min-width: 600px) {
-        width: 600px; 
-        padding-left: 50px;
-        margin-top: 0 !important;
-      } 
+  margin-top: 30px !important;
+  @media (min-width: 600px) {
+    width: 600px;
+    padding-left: 50px;
+    margin-top: 0 !important;
+  }
 }
 
 .card-img {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 .card-header-content {
-    text-align: center;
+  text-align: center;
 }
 
 .card-body {
-    text-align: center;
+  text-align: center;
 }

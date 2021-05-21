@@ -1,33 +1,29 @@
 .card-container {
+  margin: 0 auto;
+  padding-top: 20px;
+
+  @media (min-width: 600px) {
+    width: 690px;
     margin: 0 auto;
-    padding-top: 20px;
-
-    @media (min-width: 600px) {
-        width: 690px;
-        margin: 0 auto;
-
-      } 
-    
+  }
 }
 
 .col {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .card {
-    height: 500px;
-    
+  height: 500px;
 }
 
 .container-card {
-    width: 300px;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media (min-width: 600px) {
+    width: 690px;
     margin: 0 auto;
-    padding-top: 64px;
-    padding-bottom: 64px;
-
-    @media (min-width: 600px) {
-        width: 690px;
-        margin: 0 auto;
-
-      } 
+  }
 }

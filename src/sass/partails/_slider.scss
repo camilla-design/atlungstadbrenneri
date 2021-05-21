@@ -1,18 +1,16 @@
 ///// IMGAE SLIDE
 
 .slide-content-mobile {
-    display: block;
-    @media (min-width: 600px) {
-        display: none !important;
-
-      }     
+  display: block;
+  @media (min-width: 600px) {
+    display: none !important;
+  }
 }
 
 .slide-bigger-screen {
-    display: none !important;
+  display: none !important;
 
-    @media (min-width: 600px) {
-        display: block !important;
-
-      }
+  @media (min-width: 600px) {
+    display: block !important;
+  }
 }
