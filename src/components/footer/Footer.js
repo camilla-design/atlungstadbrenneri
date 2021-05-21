@@ -56,13 +56,13 @@ class Footer extends Component {
                 </a>
               </p>
               <p>
-                <a href="anno.no">Anno Musene</a>
+                <a href="https://www.anno.no/">Anno Musene</a>
               </p>
               <p>
-                <a href="stangevestbygd.no">Stange Vestbygd</a>
+                <a href="https://stangevestbygd.no/">Stange Vestbygd</a>
               </p>
               <p>
-                <a href="atlungstadgolf.no">Atlungstad Golf</a>
+                <a href="https://atlungstadgolf.no/">Atlungstad Golf</a>
               </p>
               <p>
                 <a href="https://www.tripadvisor.com/Attraction_Review-g2416413-d3478694-Reviews-Atlungstad_Distillery-Stange_Municipality_Hedmark_Eastern_Norway.html">
