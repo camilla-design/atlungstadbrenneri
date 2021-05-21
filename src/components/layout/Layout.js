@@ -140,16 +140,16 @@ function Layout() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/spiseriet" component={Spiseriet} />
+        <Route path="/kurs-og-møter" component={KursOgMøter} />
+        <Route path="/opplevelser" component={Opplevelser} />
+        <Route path="/om-oss" component={OmOss} />
         <Route path="/meny" component={Meny} />
         <Route path="/bryllup" component={Bryllup} />
         <Route path="/minnesamvær" component={Minnesamvær} />
         <Route path="/teamsmøter" component={Teammøte} />
-        <Route path="/kurs-og-møter" component={KursOgMøter} />
-        <Route path="/opplevelser" component={Opplevelser} />
         <Route path="/blande-lab" component={Blandelab} />
         <Route path="/foredrag" component={Foredrag} />
         <Route path="/omvisning" component={Omvisning} />
-        <Route path="/om-oss" component={OmOss} />
         <Route path="/nyhetsbrev" component={Nyhetsbrev} />
       </Switch>
     </Router>
