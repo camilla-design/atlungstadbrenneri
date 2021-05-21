@@ -80,6 +80,7 @@ function Layout() {
                 activeClassName="active"
                 exact
                 className="nav-link"
+                onClick={handleClick}
               >
                 Om oss
               </NavLink>
