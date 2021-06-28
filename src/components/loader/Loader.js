@@ -17,7 +17,6 @@ class Loader extends Component {
           </div>
         </div>
         <div>
-          <h2>Beklager! Innlasting tar ca 40 sekunder. </h2>
         </div>
       </>
     );
