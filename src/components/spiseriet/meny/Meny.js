@@ -98,7 +98,9 @@ class Meny extends Component {
               </ScrollAnimation>
             </div>
           </div>
+          <div className="container">
           <MenyGalleri />
+          </div>
         </div>
         <Footer />
       </>
