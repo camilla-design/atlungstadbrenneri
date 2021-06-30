@@ -7,7 +7,7 @@ import meny4 from "../../../../images/hero/meny4.jpg";
 class MenyGalleri extends Component {
   render() {
     return (
-      <div className="gallery container">
+      <div className="gallery">
         <div className="mb-4 mt-4 image-gallery">
           <div className="responsive-gallery">
             <a target="_blank" rel="noreferrer" href={meny1}>
