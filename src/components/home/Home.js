@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import CookieConsent from "react-cookie-consent";
 import ScrollAnimation from "react-animate-on-scroll";
 import Button from "react-bootstrap/Button";
@@ -40,6 +41,20 @@ class Home extends Component {
         </CookieConsent>
         <Slider />
         <Velkomstekst />
+        <div class="container-meeting-homepage mt-5 mb-5">
+        <h1> - Kurs og møter - </h1>
+            <p>
+              Ha ditt kurs eller møte i historiske omgivelser på brenneriet.
+              Våre møtelokaler er tilpasset med dagens behov for wi-fi, lyd og
+              bilde. Maten er selvsagt en viktig del av dagen, og vårt kjøkken
+              sørger for at dere får forfriskninger gjennom dagen. Lunsjen er
+              tilberedt av regionens råvarer og smaks-satt med kjærlighet til
+              norske mattradisjoner.
+            </p>
+            <Button variant="dark">
+                      <Link to="/kurs-og-møter">Les mer</Link>
+                    </Button>
+        </div>
         <ScrollAnimation animateIn="fadeIn">
           <div className="container-background">
             <div class="text-container">

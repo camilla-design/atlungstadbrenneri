@@ -21,30 +21,19 @@ class CourseList extends Component {
             <Col sm={3}>
               <Nav variant="pills" className="flex-column">
                 <Nav.Item>
+                  <Nav.Link eventKey="møtepakker"> MØTEPAKKER</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="møteromr">MØTEROM</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
                   <Nav.Link eventKey="aktiviteter"> AKTIVITETER</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="møtepakker">MØTEPAKKER</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="møterom"> MØTEROM</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>
             <Col sm={9}>
               <Tab.Content>
-                <Tab.Pane eventKey="aktiviteter">
-                  <div class="card-title mt-5">
-                    <h3> Aktiviteter </h3>
-                    <hr></hr>
-                  </div>
-                  <div class="card-body">
-                    <Aktiviteter />
-                  </div>
-                  <div class="order-button">
-                    <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
-                  </div>
-                </Tab.Pane>
+                
                 <Tab.Pane eventKey="møtepakker">
                   <div class="card-title mt-5">
                     <h3> Møtepakker </h3>
@@ -87,6 +76,18 @@ class CourseList extends Component {
                         title="credit: Atlungstad Brenneri"
                       />
                     </div>
+                  </div>
+                  <div class="order-button">
+                    <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
+                  </div>
+                </Tab.Pane>
+                <Tab.Pane eventKey="aktiviteter">
+                  <div class="card-title mt-5">
+                    <h3> Aktiviteter </h3>
+                    <hr></hr>
+                  </div>
+                  <div class="card-body">
+                    <Aktiviteter />
                   </div>
                   <div class="order-button">
                     <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
