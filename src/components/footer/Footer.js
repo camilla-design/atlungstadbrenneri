@@ -56,7 +56,7 @@ class Footer extends Component {
                 </a>
               </p>
               <p>
-                <a href="https://www.annomuseum.no/">Anno Musene</a>
+                <a href="https://www.annomuseum.no/">Anno Museene</a>
               </p>
               <p>
                 <a href="https://stangevestbygd.no/">Stange Vestbygd</a>
