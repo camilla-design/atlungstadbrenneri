@@ -1,7 +1,6 @@
 import LectureList from "./item/LectureList";
 import LectureGallery from "./item/LectureGallery";
 
-import { Link } from "react-router-dom";
 import Footer from "../../footer/Footer";
 
 import image1 from "../../../images/hero/foredrag.jpg";
@@ -19,13 +18,8 @@ class Foredrag extends Component {
             src={image1}
             title="credit: Atlungstad Brenneri"
           />{" "}
-        </div>{" "}
-        <div class="back-button mt-3 p-3">
-          <Link to="/opplevelser">
-            {" "}
-            <i class="far fa-arrow-alt-circle-left"> </i> Tilbake
-          </Link>
-        </div>{" "}
+        </div>
+        ´
         <div className="container lab">
           <LectureList />
           <Button className="order-button" variant="primary">

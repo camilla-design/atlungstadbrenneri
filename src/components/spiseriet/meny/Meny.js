@@ -5,11 +5,6 @@ import Barnemeny from "./menyer/Barnemeny";
 import MenyGalleri from "./galleri/MenyGalleri";
 import Footer from "../../footer/Footer";
 
-import Tab from "react-bootstrap/Tab";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Nav from "react-bootstrap/Nav";
-
 import ScrollAnimation from "react-animate-on-scroll";
 
 import image1 from "../../../images/hero/meny1.jpg";
@@ -27,11 +22,6 @@ class Meny extends Component {
             title="credit: Atlungstad Brenneri"
           />
         </div>
-        <div class="back-button mt-2 p-3">
-          <a href="/spiseriet">
-            <i class="far fa-arrow-alt-circle-left"></i> Tilbake
-          </a>
-        </div>
 
         <div className="container-meny mt-3 p-4">
           <div className="card-header-content">
@@ -48,53 +38,38 @@ class Meny extends Component {
             </div>
             <div className="mt-5 menu-navigation">
               <ScrollAnimation animateIn="fadeIn">
-                <Tab.Container id="left-tabs" defaultActiveKey="starter">
-                  <Row>
-                    <Col sm={3}>
-                      <Nav variant="pills" className="flex-column">
-                        <Nav.Item>
-                          <Nav.Link eventKey="starter">
-                            {" "}
-                            FORRETTER OG DUGGURD
-                          </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="main">HOVEDRETTER</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="dessert">DESSERTER</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="kids">BARNEMENY</Nav.Link>
-                        </Nav.Item>
-                      </Nav>
-                    </Col>
-                    <Col sm={9}>
-                      <Tab.Content>
-                        <Tab.Pane eventKey="starter">
+                
+                      <div className="pb-5">
+                      <hr className="hr-menu"></hr>
                           <h1>Forretter og Duggurd</h1>
-                          <hr></hr>
+                          <hr className="hr-menu"></hr>
                           <Starter />
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="main">
+                          </div>
+                       
+                        <div className="pb-5">
+                        <hr className="hr-menu"></hr>
                           <h1>Hovedretter</h1>
-                          <hr></hr>
+                          <hr className="hr-menu"></hr>
                           <Hovedretter />
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="dessert">
+                        </div>
+
+
+                        <div className="pb-5">
+                        <hr className="hr-menu"></hr>
                           <h1>Dessert</h1>
-                          <hr></hr>
+                          <hr className="hr-menu"></hr>
                           <Dessert />
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="kids">
+                        </div>
+
+
+                        <div >
+                        <hr className="hr-menu"></hr>
                           <h1>Barnemeny</h1>
-                          <hr></hr>
+                          <hr className="hr-menu"></hr>
                           <Barnemeny />
-                        </Tab.Pane>
-                      </Tab.Content>
-                    </Col>
-                  </Row>
-                </Tab.Container>
+                        </div>
+  
+                   
               </ScrollAnimation>
             </div>
           </div>

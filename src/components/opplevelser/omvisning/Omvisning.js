@@ -2,7 +2,6 @@ import TourList from "./item/TourList";
 import TourGallery from "./item/TourGallery";
 import Footer from "../../footer/Footer";
 
-import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import Button from "react-bootstrap/Button";
 
@@ -22,18 +21,14 @@ class Omvisning extends Component {
               title="credit: Atlungstad Brenneri"
             />
           </div>
-          <div class="back-button mt-3 p-3">
-            <Link to="/opplevelser">
-              <i class="far fa-arrow-alt-circle-left"></i> Tilbake
-            </Link>
-          </div>
+
           <div className="container lab">
             <TourList />
             <Button className="order-button" variant="primary">
               <a href="mailto: post@atlungstadbrenneri.no">Bestill</a>
             </Button>
             <div class="container">
-            <TourGallery />
+              <TourGallery />
             </div>
           </div>
         </ScrollAnimation>

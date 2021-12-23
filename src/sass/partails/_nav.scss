@@ -63,7 +63,12 @@
     width: 100%;
     background: $color-background;
   }
-
+  .dropdown-menu {
+    color: #83837f !important;
+    background-color: $color-primary;
+    width: 100%;
+    text-align: center;
+  }
   .nav-item .active {
     color: $color-background;
     border: 1px solid $color-background;

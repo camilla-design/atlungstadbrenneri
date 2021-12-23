@@ -19,12 +19,18 @@ function Hovedretter() {
       <div>
         {mains.map((main) => (
           <div className="mb-4 mt-4">
-            <h5>{main.title}</h5>
+            <div className="d-flex menu-flex">
+              <div>
+                <h5>{main.title}</h5>
+              </div>
+              <div>
+                <h5>{main.price}</h5>
+              </div>
+            </div>
             <p>{main.description}</p>
             <p>
               <i>{main.allergi}</i>
             </p>
-            <h5>{main.price}</h5>
           </div>
         ))}
       </div>

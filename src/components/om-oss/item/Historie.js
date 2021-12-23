@@ -16,10 +16,11 @@ function Historie() {
 
   if (texts) {
     return (
-      <div>
+      <div className="category-container mt-5 pb-5">
         {texts.map((text) => (
-          <div className="mb-4 mt-4">
+          <div className="mb-4 mt-4 p-3">
             <h1>{text.title}</h1>
+            <hr className="hr-menu"></hr>
             <h4 className="mt-4">
               <b>{text.intro}</b>
             </h4>

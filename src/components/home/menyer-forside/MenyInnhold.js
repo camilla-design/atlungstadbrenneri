@@ -41,7 +41,7 @@ function MenyInnhold() {
                     </Card.Title>
                     <Card.Text>{cardInfo[0].description}</Card.Text>
                     <Button variant="dark">
-                      <Link to="/spiseriet">Spiseriet</Link>
+                      <Link to="/meny">Meny</Link>
                     </Button>
                   </Card.Body>
                 </Card>
@@ -87,7 +87,7 @@ function MenyInnhold() {
                     </Card.Title>
                     <Card.Text>{cardInfo[2].description}</Card.Text>
                     <Button variant="dark">
-                      <Link to="/opplevelser">Opplevelser</Link>
+                      <Link to="/omvisning">Omvisning</Link>
                     </Button>
                   </Card.Body>
                 </Card>

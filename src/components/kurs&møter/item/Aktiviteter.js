@@ -16,7 +16,10 @@ function Aktiviteter() {
 
   if (textInfo) {
     return (
-      <div className="card-box">
+      <div className="card-box category-container mt-5">
+        <h1>Aktiviteter</h1>
+        <hr></hr>
+
         {textInfo.map((text) => (
           <div>
             <p>{text.description}</p>

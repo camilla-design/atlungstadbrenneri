@@ -1,7 +1,7 @@
 /// menu.js
 
 .menu-navigation {
-  text-align: center;
+  text-align: left;
 
   a {
     color: $color-background;
@@ -26,4 +26,12 @@
       color: $color-background;
     }
   }
+}
+
+.menu-flex {
+  justify-content: space-between;
+}
+
+.hr-menu {
+  width: 100%;
 }

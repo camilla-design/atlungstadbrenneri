@@ -16,16 +16,20 @@ function Møtepakker() {
 
   if (textInfo) {
     return (
-      <div>
+      <div className="category-container mt-5">
+        <h1>Våre Møtepakker</h1>
+        <hr></hr>
+        <p className="mb-5 p-3">
+          Vi har fler ulike møtepakker på Brenneriet, vi tilpasser også etter
+          dine behov og ønsker, slik at du får ditt skreddersydde arrangement i
+          våre unike og historiske lokaler Kontakt oss for planleggingen av ditt
+          møte
+        </p>
         {textInfo.map((text) => (
-          <div className="mb-4 mt-4">
-            <p>
-              Vi har fler ulike møtepakker på Brenneriet, vi tilpasser også
-              etter dine behov og ønsker, slik at du får ditt skreddersydde
-              arrangement i våre unike og historiske lokaler Kontakt oss for
-              planleggingen av ditt møte
-            </p>
+          <div className="mb-4 mt-4 p-3">
+            <hr className="hr-menu"></hr>
             <h1>{text.title}</h1>
+            <hr className="hr-menu"></hr>
             <p>{text.description}</p>
           </div>
         ))}

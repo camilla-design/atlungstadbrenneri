@@ -19,12 +19,18 @@ function Barnemeny() {
       <div>
         {kidsMenu.map((menu) => (
           <div className="mb-4 mt-4">
-            <h5>{menu.title}</h5>
+            <div className="d-flex menu-flex">
+              <div>
+                <h5>{menu.title}</h5>
+              </div>
+              <div>
+                <h5>{menu.price}</h5>
+              </div>
+            </div>
             <p>{menu.description}</p>
             <p>
               <i>{menu.allergi}</i>
             </p>
-            <h5>{menu.price}</h5>
           </div>
         ))}
       </div>

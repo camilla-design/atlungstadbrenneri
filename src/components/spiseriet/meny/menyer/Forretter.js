@@ -19,12 +19,18 @@ function Starter() {
       <div>
         {starters.map((starter) => (
           <div className="mb-4 mt-4">
-            <h5>{starter.title}</h5>
+            <div className="d-flex menu-flex">
+              <div>
+                <h5>{starter.title}</h5>
+              </div>
+              <div>
+                <h5>{starter.price}</h5>
+              </div>
+            </div>
             <p>{starter.description}</p>
             <p>
               <i>{starter.allergi}</i>
             </p>
-            <h5>{starter.price}</h5>
           </div>
         ))}
       </div>
