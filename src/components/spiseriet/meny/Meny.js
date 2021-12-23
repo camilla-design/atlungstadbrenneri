@@ -23,7 +23,7 @@ class Meny extends Component {
           />
         </div>
 
-        <div className="container-meny mt-3 p-4">
+        <div className="mt-3 p-4">
           <div className="card-header-content">
             <h1> Menyer </h1>
             <p>
@@ -41,7 +41,7 @@ class Meny extends Component {
                 
                       <div className="pb-5">
                       <hr className="hr-menu"></hr>
-                          <h1>Forretter og Duggurd</h1>
+                          <h1>Forretter</h1>
                           <hr className="hr-menu"></hr>
                           <Starter />
                           </div>

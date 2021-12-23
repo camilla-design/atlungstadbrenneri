@@ -3,10 +3,14 @@ import { Component } from "react";
 class FacebookNews extends Component {
   render() {
     return (
-      <>
-        <div className="facebook-body category-container mt-5">
-          <h1>Nyheter</h1>
+      <> 
+      <div className="category-container mt-5">
+      <h1>Nyheter</h1>
+
           <hr></hr>
+          </div>
+        <div className="facebook-body  menu-navigation mt-5">
+          
           <div className="mt-3 facebook-news">
             <iframe
               title="facebook timeline plugin"

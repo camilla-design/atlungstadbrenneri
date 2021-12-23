@@ -16,7 +16,7 @@ function Bærekraft() {
 
   if (texts) {
     return (
-      <div className="category-container mt-4">
+      <div className="category-container  menu-navigation mt-4">
         <h1>Bærekraft</h1>
         <hr></hr>
         {texts.map((text) => (

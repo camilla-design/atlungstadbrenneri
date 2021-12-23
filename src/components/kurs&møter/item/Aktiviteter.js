@@ -16,7 +16,7 @@ function Aktiviteter() {
 
   if (textInfo) {
     return (
-      <div className="card-box category-container mt-5">
+      <div className="card-box category-container  menu-navigation mt-5">
         <h1>Aktiviteter</h1>
         <hr></hr>
 

@@ -20,6 +20,7 @@ function WeddingList() {
         {texts.map((text) => (
           <div>
             <h1> {text.title} </h1>
+            <hr></hr>
             <h4>Bryllupet er en av livets største begivenheter.</h4>
             <p className="mt-3">{text.description}</p>
           </div>

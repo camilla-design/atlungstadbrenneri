@@ -20,6 +20,7 @@ function TeamMeetingList() {
         {texts.map((text) => (
           <div className="mb-4">
             <h1>{text.title}</h1>
+            <hr></hr>
             <p>{text.description}</p>
           </div>
         ))}

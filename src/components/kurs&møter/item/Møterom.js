@@ -16,7 +16,7 @@ function Møterom() {
 
   if (textInfo) {
     return (
-      <div className="category-container mt-5">
+      <div className="category-container  menu-navigation mt-5">
         <h1>Våre Møterom</h1>
         <hr></hr>
         <p className="mb-5 p-3">

@@ -19,6 +19,7 @@ function MemorialList() {
     return (
       <div className="p-3">
         <h1> {textInfo[0].title} </h1>
+        <hr></hr>
         <h4>Et siste minne.</h4>
         <p>{textInfo[0].description}</p>
         <div class="order-button mt-3">

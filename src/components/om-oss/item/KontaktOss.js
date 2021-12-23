@@ -6,14 +6,14 @@ class KontaktOss extends Component {
   render() {
     return (
       <>
-        <div className="staff-map category-container mt-5">
+        <div className="staff-map category-container  mt-5">
           <h1>Kontakt Informasjon</h1>
           <hr></hr>
           <MapAtlungstad />
         </div>
 
-        <div className="contact-card category-container">
-          <div className="mb-4 mt-4 staff-information">
+        <div className="contact-card category-container ">
+          <div className="mb-4 mt-2 staff-information">
             <p>
               <i class="fas fa-phone-alt"></i>{" "}
               <a href="tel:62 33 00 55"> 62 33 00 55</a>

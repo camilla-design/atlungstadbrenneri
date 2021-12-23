@@ -16,7 +16,9 @@ function Ansatte() {
 
   if (texts) {
     return (
-      <div className="category-container">
+      <div className="category-container mt-5">
+        <h1>Brenneriets Team</h1>
+        <hr></hr>
         {texts.map((staff) => (
           <div className="staff-card">
             <div className="mb-4 mt-4 card-img">

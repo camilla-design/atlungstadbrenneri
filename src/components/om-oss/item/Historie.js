@@ -16,7 +16,7 @@ function Historie() {
 
   if (texts) {
     return (
-      <div className="category-container mt-5 pb-5">
+      <div className="category-container  menu-navigation mt-5 pb-5">
         {texts.map((text) => (
           <div className="mb-4 mt-4 p-3">
             <h1>{text.title}</h1>

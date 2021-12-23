@@ -16,10 +16,11 @@ function LabList() {
 
   if (texts) {
     return (
-      <div className="mt-2 p-5">
+      <div className="mt-2 p-5 category-container  menu-navigation">
         {texts.map((text) => (
           <div>
             <h1>{text.title}</h1>
+            <hr></hr>
             <p>{text.description}</p>
           </div>
         ))}

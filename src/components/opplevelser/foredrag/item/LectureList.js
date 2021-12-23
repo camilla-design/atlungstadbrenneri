@@ -16,10 +16,11 @@ function LectureList() {
 
   if (texts) {
     return (
-      <div className="mt-2 p-4">
+      <div className="mt-2 p-4 category-container  menu-navigation">
         {texts.map((text) => (
           <div>
             <h1>{text.title}</h1>
+            <hr></hr>
             <h6>
               <b>{text.intro}</b>
             </h6>
